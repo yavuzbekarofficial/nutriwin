@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function index() {
@@ -35,9 +36,14 @@ function index() {
             d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
           />
         </svg>
-        <p className="text-sm text-gray-500 mt-4">
-          © {new Date().getFullYear()} Nutriwin. Tüm hakları saklıdır.
-        </p>
+        <div className="flex flex-col">
+          <p className="text-sm text-gray-500 mt-4">
+            © {new Date().getFullYear()} Nutriwin. Tüm hakları saklıdır.
+          </p>
+          <p className="text-xs text-gray-500 mt-4 opacity-50">
+            <Link href="www.thevertexcreative.com">Yavuz Bekar Medya</Link>
+          </p>
+        </div>
       </div>
     </div>
   );
