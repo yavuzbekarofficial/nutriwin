@@ -23,6 +23,7 @@ function ProductSection() {
               <Image
                 src={productGroupList.image}
                 alt={productGroupList.title}
+                fill
                 className="w-full h-full object-cover transition-all duration-300 group-hover:blur-sm"
               />
               <div className="absolute inset-0 flex flex-col justify-end p-6 bg-black/50 transition-all duration-300">

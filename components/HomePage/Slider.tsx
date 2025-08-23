@@ -37,6 +37,7 @@ export default function Slider() {
             <Image
               src={slide.img}
               alt={slide.alt}
+              fill
               className="w-full h-full object-cover"
               loading="lazy"
             />
