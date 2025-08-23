@@ -61,10 +61,14 @@ const UrunDetay: React.FC = () => {
               Grubu
             </p>
 
-            <p className="text-gray-700 leading-relaxed mb-4">
-              {urun.description}
-            </p>
-            <p className="text-gray-700 leading-relaxed">{urun.content}</p>
+            {urun.description && (
+              <p className="text-gray-700 leading-relaxed mb-4">
+                {urun.description}
+              </p>
+            )}
+            {urun.content && (
+              <p className="text-gray-700 leading-relaxed">{urun.content}</p>
+            )}
 
             {/* Yeni eklenen bilgiler */}
             <div className="mt-8 space-y-4 text-gray-700">
@@ -74,29 +78,41 @@ const UrunDetay: React.FC = () => {
                   Kullanım Amacı:
                 </span>{" "}
                 <ul className="list-disc list-inside mt-2 space-y-1">
-                  {urun.kullanimAmaci.map((madde, index) => (
-                    <li key={index}>{madde}</li>
-                  ))}
+                  {Array.isArray(urun.kullanimAmaci) ? (
+                    urun.kullanimAmaci.map((madde, index) => (
+                      <li key={index}>{madde}</li>
+                    ))
+                  ) : (
+                    <li>{urun.kullanimAmaci}</li>
+                  )}
                 </ul>
               </div>
 
               {/* Etki Alanı bölümü */}
-              <div className="bg-gray-50 p-4 rounded-lg">
-                <span className="font-semibold text-gray-900">Etki Alanı:</span>{" "}
-                <ul className="list-disc list-inside mt-2 space-y-1">
-                  {urun.etkiAlani.map((madde, index) => (
-                    <li key={index}>{madde}</li>
-                  ))}
-                </ul>
-              </div>
+              {urun.etkiAlani && Array.isArray(urun.etkiAlani) && (
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <span className="font-semibold text-gray-900">
+                    Etki Alanı:
+                  </span>{" "}
+                  <ul className="list-disc list-inside mt-2 space-y-1">
+                    {urun.etkiAlani.map((madde, index) => (
+                      <li key={index}>{madde}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
 
               {/* Ambalaj bölümü */}
               <div className="bg-gray-50 p-4 rounded-lg">
                 <span className="font-semibold text-gray-900">Ambalaj:</span>{" "}
                 <ul className="list-disc list-inside mt-2 space-y-1">
-                  {urun.ambalaj.map((madde, index) => (
-                    <li key={index}>{madde}</li>
-                  ))}
+                  {Array.isArray(urun.ambalaj) ? (
+                    urun.ambalaj.map((madde, index) => (
+                      <li key={index}>{madde}</li>
+                    ))
+                  ) : (
+                    <li>{urun.ambalaj}</li>
+                  )}
                 </ul>
               </div>
             </div>

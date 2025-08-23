@@ -2,8 +2,30 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image"; // Next.js Image bileşeni için
 import { Icon } from "@iconify/react/dist/iconify.js";
-import { navLinks } from "@/data/Navlinks";
 import { useRouter } from "next/router"; // useRouter hook'u eklendi
+
+const navLinks = [
+  {
+    name: "ANASAYFA",
+    href: "/",
+  },
+  {
+    name: "HAKKIMIZDA",
+    href: "/hakkimizda",
+  },
+  {
+    name: "ÜRÜNLERİMİZ",
+    href: "/urunlerimiz",
+  },
+  {
+    name: "BLOG",
+    href: "/blog",
+  },
+  {
+    name: "İLETİŞİM",
+    href: "/iletisim",
+  },
+];
 
 function Navbar() {
   const router = useRouter(); // router'ı başlatıyoruz
