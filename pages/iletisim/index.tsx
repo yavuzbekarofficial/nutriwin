@@ -5,7 +5,6 @@ import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Maps from "@/components/Maps";
-import SahaEkibi from "@/components/SahaEkibi";
 
 const Iletisim: React.FC = () => {
   // Footer'daki bilgilerle güncellendi

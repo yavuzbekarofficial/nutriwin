@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Icon } from "@iconify/react/dist/iconify.js";
 
 interface ProductCardProps {
   name: string;

@@ -7,7 +7,6 @@ import BlogSection from "./BlogSection";
 import Footer from "../Footer";
 import NumbersSection from "../NumbersSection";
 import Maps from "../Maps";
-import SahaEkibi from "../SahaEkibi";
 
 function HomePage() {
   return (

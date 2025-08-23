@@ -1,6 +1,5 @@
 // pages/urunlerimiz/index.tsx
 
-import Head from "next/head";
 import ProductSidebar from "../../components/ProductPage/ProductSidebar";
 import Navbar from "@/components/Navbar";
 import PageBanner from "@/components/PageBanner";
