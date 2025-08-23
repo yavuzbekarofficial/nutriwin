@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { productGroupLists } from "@/data/productGroupLists";
 import { Fade } from "react-awesome-reveal";
+import Image from "next/image";
 
 function ProductSection() {
   return (
@@ -19,7 +20,7 @@ function ProductSection() {
         {productGroupLists.map((productGroupList) => (
           <Fade key={productGroupList.title} triggerOnce>
             <div className="relative w-full h-[400px] rounded-lg overflow-hidden shadow-md group cursor-pointer">
-              <img
+              <Image
                 src={productGroupList.image}
                 alt={productGroupList.title}
                 className="w-full h-full object-cover transition-all duration-300 group-hover:blur-sm"

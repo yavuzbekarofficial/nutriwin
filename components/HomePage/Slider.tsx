@@ -4,6 +4,7 @@ import "keen-slider/keen-slider.min.css";
 import { useEffect } from "react";
 import Link from "next/link";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import Image from "next/image";
 
 export default function Slider() {
   const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({
@@ -33,7 +34,7 @@ export default function Slider() {
       <div ref={sliderRef} className="keen-slider h-full">
         {slides.map((slide, i) => (
           <div key={i} className="keen-slider__slide relative">
-            <img
+            <Image
               src={slide.img}
               alt={slide.alt}
               className="w-full h-full object-cover"

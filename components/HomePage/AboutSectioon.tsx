@@ -25,7 +25,7 @@ function AboutSection() {
           <Slide direction="right" triggerOnce>
             <div>
               <div className="font-bold text-4xl text-red-500">
-                Nutriwin'e Hoş Geldiniz
+                Nutriwine Hoş Geldiniz
               </div>
 
               {/* Başlığın altına eklenen kırmızı çizgi */}
