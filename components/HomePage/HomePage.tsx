@@ -23,7 +23,7 @@ function HomePage() {
       <div className="max-w-6xl mx-auto px-12 py-10 flex flex-col gap-10">
         <AboutSectioon />
         <ProductSection />
-        {/* <BlogSection /> */}
+        <BlogSection />
         {/* <SahaEkibi /> */}
         <NumbersSection />
         <Maps />

@@ -25,8 +25,7 @@ const BlogAnaSayfa: React.FC = () => {
           Tüm Blog Yazıları
         </h1>
         {/* Blog yazılarını listelemek için BlogList bileşenini kullanıyoruz */}
-        {/* <BlogList blogs={blogs} /> */}
-        <div>Henüz bir blog yazısı girilmemiştir</div>
+        <BlogList blogs={blogs} />
       </div>
 
       <Footer />
