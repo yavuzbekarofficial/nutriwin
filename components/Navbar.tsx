@@ -1,50 +1,55 @@
-import { Icon } from "@iconify/react/dist/iconify.js";
-import Link from "next/link";
 import React from "react";
-
-const links = [
-  {
-    label: "Ana Sayfa",
-    href: "/",
-  },
-  {
-    label: "Hakkımızda",
-    href: "/hakkimizda",
-  },
-  {
-    label: "Ürünlerimiz",
-    href: "/ürünlerimiz",
-  },
-  {
-    label: "Blog",
-    href: "/blog",
-  },
-];
+import Link from "next/link";
+import Image from "next/image"; // Next.js Image bileşeni için
+import { Icon } from "@iconify/react/dist/iconify.js";
+import { navLinks } from "@/data/Navlinks";
+import { useRouter } from "next/router"; // useRouter hook'u eklendi
 
 function Navbar() {
+  const router = useRouter(); // router'ı başlatıyoruz
+
   return (
-    <div className="w-full flex justify-between items-center p-5 bg-white">
+    <div className="fixed top-0 left-0 w-full flex items-center justify-between px-16 py-5 bg-white h-[80px] shadow z-50">
       <div>
-        <img src="/images/logo.jpg"></img>
-      </div>
-      <div className="flex gap-9">
-        {links.map((link) => (
-          <div className="gap-5 flex" key={link.label}>
-            <Link className="uppercase font-semibold" href={link.href}>
-              {link.label}
-            </Link>
-          </div>
-        ))}
+        {/* Logoya tıklayınca anasayfaya yönlendirme */}
+        <Link href="/">
+          <Image
+            src="/images/logo.png"
+            alt="Şirket Logosu"
+            width={150}
+            height={50}
+          />
+        </Link>
       </div>
       <div className="flex gap-5">
-        <div className="flex items-center gap-2 bg-red-500 px-5 py-2 rounded-full text-white">
-          <Link href={"/"}>Trendyol Mağazası</Link>
-          <Icon icon="entypo:shop" width="20" height="20" />
-        </div>
-        <div className="flex items-center gap-2 bg-green-500 px-5 py-2 rounded-full text-white">
-          <Link href={"/"}>İletişime Geç</Link>
-          <Icon icon="ic:round-phone" width="24" height="24" />
-        </div>
+        {navLinks.map((navLink) => (
+          <Link
+            key={navLink.name}
+            href={navLink.href}
+            // Aktif linki kontrol ederek sınıfı değiştiriyoruz
+            className={`font-medium transition-colors ${
+              router.pathname === navLink.href
+                ? "text-red-600" // Aktifse kırmızı
+                : "text-gray-700 hover:text-red-600" // Aktif değilse gri ve hover
+            }`}
+          >
+            {navLink.name}
+          </Link>
+        ))}
+      </div>
+      <div className="flex gap-3 text-white">
+        {/* Trendyol Mağazası Butonu */}
+
+        {/* İletişime Geç Butonu (WhatsApp) */}
+        <Link
+          href="https://wa.me/908503040946"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center bg-[#25D366] p-2 px-4 rounded-3xl gap-3 hover:opacity-80 transition-opacity"
+        >
+          <Icon icon="streamline-plump:phone"></Icon>
+          <span>İLETİŞİME GEÇ</span>
+        </Link>
       </div>
     </div>
   );
