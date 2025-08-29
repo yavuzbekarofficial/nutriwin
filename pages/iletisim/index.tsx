@@ -11,7 +11,7 @@ const Iletisim: React.FC = () => {
   const sirketBilgileri = {
     ad: "Nutriwin İlaç Kimya",
     adres:
-      "Çevik Yapı - Halil İbrahim Çevik Boya Kimya İnşaat San. Ltd. Şti., Fevziçakmak, 10514. Sk. No:45, 42050 Karatay/Konya",
+      "Nutriwin Kimya İlaç San. Tic. Ltd. Şti. Fevzi çakmak Mah. 10514. Sok. No:47 Karatay/Konya",
     telefon: "08503040946",
     email: "info@nutriwin.com.tr",
     logo: "/images/logo.png",

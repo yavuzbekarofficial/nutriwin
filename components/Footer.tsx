@@ -44,9 +44,8 @@ function Footer() {
           </Link>
 
           <div className="mb-2">
-            <span className="font-bold">Adres:</span> Çevik Yapı - Halil İbrahim
-            Çevik Boya Kimya İnşaat San. Ltd. Şti., Fevziçakmak, 10514. Sk.
-            No:45, 42050 Karatay/Konya
+            <span className="font-bold">Adres:</span> Nutriwin Kimya İlaç San.
+            Tic. Ltd. Şti. Fevzi çakmak Mah. 10514. Sok. No:47 Karatay/Konya
           </div>
           <div className="mb-2">
             <span className="font-bold">Telefon:</span>{" "}
