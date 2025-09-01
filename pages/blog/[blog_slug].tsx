@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import BlogSidebar from "@/components/BlogPage/BlogSidebar";
 import Image from "next/image";
 import { blogs } from "@/data/blogs";
-import Link from "next/link"; // Link bileşeni eklendi
+import Link from "next/link";
 
 const BlogDetay: React.FC = () => {
   const router = useRouter();
@@ -32,7 +32,7 @@ const BlogDetay: React.FC = () => {
         <PageBanner title="Blog"></PageBanner>
       </div>
 
-      <div className="max-w-6xl mx-auto px-12 py-10 flex flex-col gap-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-12 py-10 flex flex-col gap-10">
         {/* Geri Dön butonu */}
         <div className="mb-6">
           <Link
@@ -57,18 +57,22 @@ const BlogDetay: React.FC = () => {
           </Link>
         </div>
 
-        <div className="flex flex-1 gap-12">
-          {/* Sol tarafta blog başlıklarını listeleyen sidebar */}
+        {/* Ana içerik alanı */}
+        <div className="flex flex-col md:flex-row gap-8">
+          {/*
+            Sol tarafta blog başlıklarını listeleyen sidebar.
+            Mobil görünümde üstte, masaüstünde solda kalır.
+          */}
           <BlogSidebar />
 
           {/* Sağ tarafta blog içeriği */}
-          <div className="flex-1 px-8">
-            <h1 className="text-4xl font-bold text-gray-900 mb-6">
+          <div className="flex-1">
+            <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
               {blog.title}
             </h1>
             <p className="text-lg text-gray-600 mb-4">{blog.date}</p>
 
-            <div className="relative w-full h-[400px] mb-8 rounded-lg overflow-hidden">
+            <div className="relative w-full h-[250px] sm:h-[400px] mb-8 rounded-lg overflow-hidden">
               <Image
                 src={blog.image}
                 alt={blog.title}
@@ -82,7 +86,7 @@ const BlogDetay: React.FC = () => {
               {blog.content.map((item, index) => (
                 <div key={index}>
                   {item.type === "heading" && (
-                    <h2 className="text-2xl font-semibold mt-6 mb-2">
+                    <h2 className="text-xl sm:text-2xl font-semibold mt-6 mb-2">
                       {item.text}
                     </h2>
                   )}

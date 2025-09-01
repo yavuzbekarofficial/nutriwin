@@ -15,7 +15,8 @@ const ProductSidebar: React.FC = () => {
   const router = useRouter();
 
   return (
-    <aside className="w-1/4 p-6 bg-gray-200 rounded-xl h-[300px] overflow-y-auto">
+    // md:w-1/4 yerine md:w-80 kullanıldı. Bu, ProductSidebar'a sabit bir genişlik atar.
+    <aside className="w-full md:w-80 p-6 bg-gray-200 rounded-xl h-auto md:h-[300px] overflow-y-auto">
       <h4 className="text-xl font-semibold mb-4 text-gray-800">
         Ürün Grupları
       </h4>

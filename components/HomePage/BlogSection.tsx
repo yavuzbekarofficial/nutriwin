@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { blogs } from "@/data/blogs";
 import { Fade } from "react-awesome-reveal"; // Fade bileşeni eklendi
+import useIsMobile from "@/hooks/useIsMobile";
 
 function BlogSection() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -17,11 +18,16 @@ function BlogSection() {
   const paginate = (pageNumber: number) => {
     setCurrentPage(pageNumber);
   };
+  const isMobile = useIsMobile();
 
   return (
     <section className="py-12">
       <div className="container mx-auto">
-        <div className="flex justify-between items-end mb-12">
+        <div
+          className={`flex justify-between items-end mb-12 ${
+            isMobile ? "flex-col items-start gap-4" : ""
+          }`}
+        >
           <div className="relative">
             <h2 className="font-bold text-4xl text-red-500">Son Yazılarımız</h2>
             {/* Kırmızı çizgi */}
