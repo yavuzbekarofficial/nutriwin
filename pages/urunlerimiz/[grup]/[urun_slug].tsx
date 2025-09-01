@@ -57,8 +57,9 @@ const UrunDetay: React.FC = () => {
             <div className="border-b-2 border-red-500 w-24 mb-6"></div>
 
             <p className="text-lg text-gray-600 mb-4">
-              <span className="font-semibold">Grup:</span> {urun.group}
-              Grubu
+              <span className="font-semibold">Grup:</span>{" "}
+              <span className="uppercase">{urun.group}</span>
+              <span> </span>Grubu
             </p>
 
             {urun.description && (
