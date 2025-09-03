@@ -5,30 +5,41 @@ import { useRouter } from "next/router";
 import Navbar from "@/components/Navbar";
 import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
-import { urunler } from "@/data/productLists";
+// İki dilli veri dosyalarını da import ediyoruz
+import { urunler } from "@/data/productLists"; // Türkçe veriler
+import { products } from "@/data/productLists_en"; // İngilizce veriler
 import Image from "next/image";
 import { Icon } from "@iconify/react";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const UrunDetay: React.FC = () => {
   const router = useRouter();
   const { urun_slug } = router.query;
+  const { t, locale } = useTranslation();
 
-  const urun = urunler.find((u) => u.slug === urun_slug);
+  // locale değişkenine göre doğru veri dosyasını seçiyoruz
+  const currentProducts = locale === "tr" ? urunler : products;
+
+  // Seçilen veri dosyasında ürünü buluyoruz
+  const urun = currentProducts.find((u) => u.slug === urun_slug);
 
   if (!urun) {
-    return <div>Ürün bulunamadı.</div>;
+    // Ürün bulunamadı mesajını çeviri fonksiyonu ile gösteriyoruz
+    return <div>{t("product_not_found")}</div>;
   }
 
   return (
     <div>
       <Head>
-        <title>{urun.name} Detayları | İlaç Firması</title>
+        <title>
+          {urun.name} {t("product_details_title")} | {t("company_name")}
+        </title>
       </Head>
 
       <Navbar />
 
       <div className="mt-[80px]">
-        <PageBanner title="Ürünlerimiz"></PageBanner>
+        <PageBanner title={t("products.our-product")}></PageBanner>
       </div>
 
       <div className="max-w-6xl mx-auto px-12 py-10">
@@ -37,7 +48,7 @@ const UrunDetay: React.FC = () => {
           className="flex items-center gap-2 mb-6 text-gray-600 hover:text-red-500 transition-colors duration-200"
         >
           <Icon icon="mingcute:left-line" className="text-2xl" />
-          <span className="font-semibold">Geri Dön</span>
+          <span className="font-semibold">{t("products.go-back")}</span>
         </button>
 
         <div className="flex flex-col md:flex-row gap-8">
@@ -57,9 +68,10 @@ const UrunDetay: React.FC = () => {
             <div className="border-b-2 border-red-500 w-24 mb-6"></div>
 
             <p className="text-lg text-gray-600 mb-4">
-              <span className="font-semibold">Grup:</span>{" "}
+              <span className="font-semibold">{t("products.group")}:</span>{" "}
               <span className="uppercase">{urun.group}</span>
-              <span> </span>Grubu
+              <span> </span>
+              {t("products.group")}
             </p>
 
             {urun.description && (
@@ -71,12 +83,10 @@ const UrunDetay: React.FC = () => {
               <p className="text-gray-700 leading-relaxed">{urun.content}</p>
             )}
 
-            {/* Yeni eklenen bilgiler */}
             <div className="mt-8 space-y-4 text-gray-700">
-              {/* Kullanım Amacı bölümü */}
               <div className="bg-gray-50 p-4 rounded-lg">
                 <span className="font-semibold text-gray-900">
-                  Kullanım Amacı:
+                  {t("products.purpose-of-use")}:
                 </span>{" "}
                 <ul className="list-disc list-inside mt-2 space-y-1">
                   {Array.isArray(urun.kullanimAmaci) ? (
@@ -89,11 +99,10 @@ const UrunDetay: React.FC = () => {
                 </ul>
               </div>
 
-              {/* Etki Alanı bölümü */}
               {urun.etkiAlani && Array.isArray(urun.etkiAlani) && (
                 <div className="bg-gray-50 p-4 rounded-lg">
                   <span className="font-semibold text-gray-900">
-                    Etki Alanı:
+                    {t("products.area-of-influence")}:
                   </span>{" "}
                   <ul className="list-disc list-inside mt-2 space-y-1">
                     {urun.etkiAlani.map((madde, index) => (
@@ -103,9 +112,10 @@ const UrunDetay: React.FC = () => {
                 </div>
               )}
 
-              {/* Ambalaj bölümü */}
               <div className="bg-gray-50 p-4 rounded-lg">
-                <span className="font-semibold text-gray-900">Ambalaj:</span>{" "}
+                <span className="font-semibold text-gray-900">
+                  {t("products.packing")}:
+                </span>{" "}
                 <ul className="list-disc list-inside mt-2 space-y-1">
                   {Array.isArray(urun.ambalaj) ? (
                     urun.ambalaj.map((madde, index) => (

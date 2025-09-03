@@ -4,6 +4,7 @@ import Image from "next/image";
 import { blogs } from "@/data/blogs";
 import { Fade } from "react-awesome-reveal"; // Fade bileşeni eklendi
 import useIsMobile from "@/hooks/useIsMobile";
+import { useTranslation } from "@/hooks/useTranslation";
 
 function BlogSection() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -20,6 +21,8 @@ function BlogSection() {
   };
   const isMobile = useIsMobile();
 
+  const { t } = useTranslation();
+
   return (
     <section className="py-12">
       <div className="container mx-auto">
@@ -29,7 +32,9 @@ function BlogSection() {
           }`}
         >
           <div className="relative">
-            <h2 className="font-bold text-4xl text-red-500">Son Yazılarımız</h2>
+            <h2 className="font-bold text-4xl text-red-500">
+              {t("blogs.last-blog")}
+            </h2>
             {/* Kırmızı çizgi */}
             <div className="border-b-2 border-red-500 w-24 mt-2"></div>
           </div>
@@ -38,7 +43,7 @@ function BlogSection() {
             href="/blog"
             className="bg-gray-800 text-white font-semibold px-6 py-2 rounded-full hover:bg-gray-900 transition-colors duration-300"
           >
-            Tüm Blogları Gör
+            {t("blogs.all-blog")}
           </Link>
         </div>
 
@@ -66,7 +71,7 @@ function BlogSection() {
                     href={`/blog/${post.slug}`}
                     className="inline-block mt-auto bg-red-600 text-white font-semibold px-6 py-2 rounded-full hover:bg-red-700 transition-colors duration-300 self-start text-center"
                   >
-                    Devamını Oku
+                    {t("blogs.read-more")}
                   </Link>
                 </div>
               </div>

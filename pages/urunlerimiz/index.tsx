@@ -6,11 +6,13 @@ import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
 import ProductList from "@/components/ProductPage/ProductList";
 import { urunler } from "@/data/productLists";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const UrunlerAnaSayfa: React.FC = () => {
   // Tüm ürünleri tek bir dizide toplar.
   // Bu şekilde urunler nesnesindeki tüm gruplar birleştirilir.
   const tumUrunler = Object.values(urunler).flat();
+  const { t } = useTranslation();
 
   return (
     <div>
@@ -18,7 +20,7 @@ const UrunlerAnaSayfa: React.FC = () => {
 
       {/* Sayfa başlığı */}
       <div className="mt-[80px]">
-        <PageBanner title="Ürünlerimiz"></PageBanner>
+        <PageBanner title={t("products.our-product")}></PageBanner>
       </div>
 
       {/* Ana içerik alanı */}
@@ -35,7 +37,7 @@ const UrunlerAnaSayfa: React.FC = () => {
           {/* Ürün listesi */}
           <div className="flex-1 p-0 md:p-8">
             <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-              Tüm Ürünlerimiz
+              {t("products.all-product")}
             </h1>
             <ProductList urunler={tumUrunler} grup="tum-urunler" />
           </div>

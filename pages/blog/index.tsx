@@ -6,8 +6,10 @@ import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
 import BlogList from "@/components/BlogPage/BlogList";
 import { blogs } from "@/data/blogs";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const BlogAnaSayfa: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <div>
       <Head>
@@ -22,7 +24,7 @@ const BlogAnaSayfa: React.FC = () => {
 
       <div className="max-w-6xl mx-auto px-12 py-10 flex flex-col gap-10">
         <h1 className="text-4xl font-bold text-gray-900 mb-6">
-          Tüm Blog Yazıları
+          {t("blogs.all-blog")}
         </h1>
         {/* Blog yazılarını listelemek için BlogList bileşenini kullanıyoruz */}
         <BlogList blogs={blogs} />

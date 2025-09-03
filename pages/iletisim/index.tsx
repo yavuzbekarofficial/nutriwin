@@ -5,6 +5,7 @@ import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Maps from "@/components/Maps";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const Iletisim: React.FC = () => {
   // Footer'daki bilgilerle güncellendi
@@ -16,6 +17,7 @@ const Iletisim: React.FC = () => {
     email: "info@nutriwin.com.tr",
     logo: "/images/logo.png",
   };
+  const { t } = useTranslation();
 
   return (
     <div>
@@ -26,12 +28,12 @@ const Iletisim: React.FC = () => {
       <Navbar />
 
       <div className="mt-[80px]">
-        <PageBanner title="İletişim"></PageBanner>
+        <PageBanner title={t("contact.contact-text")}></PageBanner>
       </div>
 
       <div className="max-w-6xl mx-auto px-12 py-10 flex flex-col gap-10">
         <h1 className="text-4xl font-bold text-gray-900 text-center mb-6">
-          Bize Ulaşın
+          {t("contact.contact-us")}
         </h1>
 
         {/* İletişim Bilgileri */}

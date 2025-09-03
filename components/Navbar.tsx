@@ -1,39 +1,47 @@
+// components/Navbar.tsx
+
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { useRouter } from "next/router";
-import useIsMobile from "@/hooks/useIsMobile"; // useIsMobile hook'unu doğru yoluyla ekleyin
-
-const navLinks = [
-  {
-    name: "ANASAYFA",
-    href: "/",
-  },
-  {
-    name: "HAKKIMIZDA",
-    href: "/hakkimizda",
-  },
-  {
-    name: "ÜRÜNLERİMİZ",
-    href: "/urunlerimiz",
-  },
-  {
-    name: "BLOG",
-    href: "/blog",
-  },
-  {
-    name: "İLETİŞİM",
-    href: "/iletisim",
-  },
-];
+import useIsMobile from "@/hooks/useIsMobile";
+import { useTranslation } from "@/hooks/useTranslation";
 
 function Navbar() {
   const router = useRouter();
-  const isMobile = useIsMobile(); // Hook'u kullanarak mobil olup olmadığını kontrol ediyoruz
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // Hamburger menü durumunu yönetiyoruz
+  const isMobile = useIsMobile();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // useTranslation hook'undan hem t'yi hem de yeni changeLanguage fonksiyonunu al
+  const { t, locale, changeLanguage } = useTranslation();
 
-  // Linke tıklandığında menüyü kapatmak için
+  const handleLanguageChange = () => {
+    changeLanguage(locale === "tr" ? "en" : "tr");
+  };
+
+  const navLinks = [
+    {
+      name: t("navbar.home"),
+      href: "/",
+    },
+    {
+      name: t("navbar.about"),
+      href: "/hakkimizda",
+    },
+    {
+      name: t("navbar.products"),
+      href: "/urunlerimiz",
+    },
+    {
+      name: t("navbar.blog"),
+      href: "/blog",
+    },
+    {
+      name: t("navbar.contact"),
+      href: "/iletisim",
+    },
+  ];
+
   const handleLinkClick = () => {
     if (isMobile) {
       setIsMenuOpen(false);
@@ -42,7 +50,6 @@ function Navbar() {
 
   return (
     <div className="fixed top-0 left-0 w-full z-50 shadow">
-      {/* Masaüstü ve mobil navbar'ı ayırma */}
       {isMobile ? (
         // Mobil Navbar
         <div className="flex items-center justify-between px-4 py-3 bg-white h-[80px]">
@@ -65,11 +72,20 @@ function Navbar() {
             >
               <Icon icon="streamline-plump:phone" className="w-4 h-4"></Icon>
             </Link>
+            {/* Dil değiştirme butonu - Mobil */}
+            <button
+              onClick={handleLanguageChange}
+              className="p-1 rounded-full transition-opacity hover:opacity-80"
+            >
+              <Icon
+                icon={locale === "tr" ? "flag:gb-4x3" : "flag:tr-4x3"}
+                className="w-7 h-7"
+              />
+            </button>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-gray-700 p-2"
             >
-              {/* Hamburger veya çarpı ikonu */}
               <Icon
                 icon={isMenuOpen ? "codicon:chrome-close" : "ci:hamburger-lg"}
                 className="w-8 h-8"
@@ -77,7 +93,6 @@ function Navbar() {
             </button>
           </div>
 
-          {/* Mobil Menü (Açıldığında Görünür) */}
           <div
             className={`fixed top-[60px] left-0 h-full w-full bg-white transition-transform duration-300 ease-in-out transform ${
               isMenuOpen ? "translate-x-0" : "-translate-x-full"
@@ -88,7 +103,8 @@ function Navbar() {
                 key={navLink.name}
                 href={navLink.href}
                 onClick={handleLinkClick}
-                className={`text-2xl font-semibold transition-colors ${
+                locale={locale} // Next.js'in dil bilgisini koruması için Link bileşenine locale prop'u eklendi
+                className={`text-2xl font-semibold transition-colors uppercase ${
                   router.pathname === navLink.href
                     ? "text-red-600"
                     : "text-gray-700 hover:text-red-600"
@@ -104,7 +120,7 @@ function Navbar() {
               className="flex items-center mt-4 bg-[#25D366] p-3 px-6 rounded-full gap-3 text-white font-medium hover:opacity-80 transition-opacity"
             >
               <Icon icon="streamline-plump:phone"></Icon>
-              <span>İLETİŞİME GEÇ</span>
+              <span className="uppercase">{t("navbar.contactNow")}</span>
             </Link>
           </div>
         </div>
@@ -126,7 +142,8 @@ function Navbar() {
               <Link
                 key={navLink.name}
                 href={navLink.href}
-                className={`font-medium transition-colors ${
+                locale={locale} // Link bileşenine locale prop'u eklendi
+                className={`font-medium transition-colors uppercase ${
                   router.pathname === navLink.href
                     ? "text-red-600"
                     : "text-gray-700 hover:text-red-600"
@@ -137,6 +154,16 @@ function Navbar() {
             ))}
           </div>
           <div className="flex gap-3 text-white">
+            {/* Dil değiştirme butonu - Masaüstü */}
+            <button
+              onClick={handleLanguageChange}
+              className="p-1 rounded-full transition-opacity hover:opacity-80"
+            >
+              <Icon
+                icon={locale === "tr" ? "flag:gb-4x3" : "flag:tr-4x3"}
+                className="w-8 h-8"
+              />
+            </button>
             <Link
               href="https://wa.me/908503040946"
               target="_blank"
@@ -144,7 +171,7 @@ function Navbar() {
               className="flex items-center bg-[#25D366] p-2 px-4 rounded-3xl gap-3 hover:opacity-80 transition-opacity"
             >
               <Icon icon="streamline-plump:phone"></Icon>
-              <span>İLETİŞİME GEÇ</span>
+              <span className="uppercase">{t("navbar.contact-now")}</span>
             </Link>
           </div>
         </div>

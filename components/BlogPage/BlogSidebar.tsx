@@ -4,14 +4,16 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { blogs } from "@/data/blogs";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const BlogSidebar: React.FC = () => {
   const router = useRouter();
+  const { t } = useTranslation();
 
   return (
     <aside className="w-full md:w-80 p-6 bg-gray-200 rounded-xl h-auto md:h-[500px] overflow-y-auto">
       <h4 className="text-xl font-semibold mb-4 text-gray-800">
-        Blog Yazıları
+        {t("blogs.last-blog")}
       </h4>
       <ul className="space-y-2">
         {blogs.map((blog) => (

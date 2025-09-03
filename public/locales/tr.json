@@ -1,0 +1,454 @@
+{
+  "navbar": {
+    "home": "Anasayfa",
+    "about": "Hakkımızda",
+    "products": "Ürünlerimiz",
+    "blog": "Blog",
+    "contact": "İletişim",
+    "contact-now": "İLETİŞİME GEÇ"
+  },
+  "about": {
+    "about": "Hakkımızda",
+    "about-welcome": "Nutriwine Hoş Geldiniz",
+    "about-more": "Daha Fazla",
+    "about-paragraph1": "2019 yılında kurulan Nutriwin, hayvan sağlığını en üst seviyeye taşımak amacıyla homeopati ve beslenme destek ürünleri geliştiren yenilikçi bir markadır. Türkiye’deki homeopatik ürünlerde endüstriyel anlamda üretim yapabilen tek firmayız. Bilimsel araştırmalara dayalı formüllerimizle, evcil hayvanlardan çiftlik hayvanlarına kadar geniş bir yelpazede sağlıklı ve dengeli çözümler sunuyoruz.",
+    "about-paragraph2": "Homeopatlarımız ve veteriner hekimlerimizle hayvanların yaşam kalitesini artıran, bağışıklık sistemlerini güçlendiren ve gelişimlerini destekleyen ürünler üretiyoruz. Doğru beslenme ve etkili destek ilkesiyle hareket eden Nutriwin, kalite ve güvenirliği ön planda tutarak en iyi bileşenleri kullanmaktadır.",
+    "about-paragraph3": "Sürekli gelişen Ar-Ge çalışmalarımızla, doğa dostu ve etik üretim anlayışını benimseyerek, hayvan dostlarımızın sağlıklı ve mutlu bir yaşam sürmelerine katkı sağlıyoruz. Nutriwin olarak, hayvan sağlığında güvenilir bir çözüm ortağı olmaktan gurur duyuyoruz.",
+    "our-mision": "Misyonumuz",
+    "our-mision1": "Bilimsel ve inovatif çözümler geliştirerek hayvan sağlığını, büyümesini ve üretkenliğini destekleyen yüksek kaliteli yem katkıları ve tedavi destek ürünleri sunmak.",
+    "our-mision2": "Hayvan refahı ve verimliliğini artırarak sürdürülebilir tarım ve hayvancılık sektörüne katkı sağlamak.",
+    "our-mision3": "Veteriner hekimler, çiftçiler ve üreticiler için güvenilir bir iş ortağı olmak ve ihtiyaçlarına özel çözümler üretmek.",
+    "our-mision4": "Doğaya ve çevreye duyarlı üretim süreçleriyle ekolojik dengeyi koruyarak sürdürülebilir bir gelecek inşa etmek.",
+    "our-mision5": "Ar-Ge ve kalite standartlarını en üst seviyede tutarak müşteri memnuniyetini sürekli artırmak.",
+    "our-vision": "Vizyonumuz",
+    "our-vision1": "Hayvan sağlığı ve beslenme alanında yenilikçi ve bilimsel çözümler sunarak, sürdürülebilir verimliliği ve refahı en üst seviyeye taşımak. Küresel ölçekte güvenilir, kaliteli ve çevre dostu yem katkıları ile tedavi destek ürünleri sağlayarak sektördeki öncü konumda yer almak."
+  },
+
+  "products": {
+    "our-product": "Ürünlerimiz",
+    "all-product": "Tüm Ürünler",
+    "product-group": "Ürün Gruplarımız",
+    "group-name": "Grubu Ürünleri",
+    "see-product": "Ürünleri İncele",
+    "see-detail": "Detaya Git",
+    "go-back": "Geri Dön",
+    "group": "Grubu",
+    "homeopatik": "Homeopatik Ürünleri",
+    "supply": "Besleme Ürünleri",
+    "care": "Bakım Ürünleri",
+    "bolus": "Boluslar",
+    "purpose-of-use": "Kullanım Amacı",
+    "area-of-influence": "Etki Alanı",
+    "packing": "Ambalaj",
+    "product-not-found": "Ürün bulunamadı.",
+    "product-details": "Detayları",
+    "negrofix": {
+      "name": "Negrofix",
+      "purpose-of-use": [
+        "Bağışıklık sistemini güçlendirerek ağır bakteriyel enfeksiyonlara karşı etkin koruma sağlar.",
+        "Nekrotik ve apseli dokuların drenajını destekleyerek iyileşme sürecini hızlandırır.",
+        "Cilt ve mukozadaki iltihabi süreçleri dengeleyerek kronik enfeksiyon riskini azaltır.",
+        "Yara iyileşmesini hızlandırarak sağlıklı doku oluşumunu teşvik eder.",
+        "Bağışıklık sisteminin aşırı reaksiyonlarını düzenleyerek otoimmün eğilimleri dengeler."
+      ],
+      "area-of-influence": [
+        "Doku Nekrozu ve Derin Enfeksiyonlar Üzerindeki Etkisi",
+        "Bakteriyel Enfeksiyonlara Karşı Bağışıklık Yanıtının Güçlendirilmesi",
+        "Apse ve Patolojik İltihabı Düzenleyici Mekanizma",
+        "Doku Onarımı ve Yenilenmeyi Hızlandırma"
+      ],
+      "packing": ["20 ml", "50 ml", "100 ml"]
+    },
+    "wartoff": {
+      "name": "Wartoff",
+      "purpose-of-use": [
+        "Siğil, papillom vb. cilt lezyonlarının tedavisini destekleyerek, lezyonların küçülmesini ve yok olmasını hızlandırır.",
+        "Bağışıklık sistemini hücresel düzeyde modüle ederek, viral enfeksiyonların tekrar etmesini engeller. Thuja'nın güçlü antimiyazmatik etkisi sayesinde, sadece mevcut siğilleri değil, vücutta gizlenmiş eski enfeksiyon kalıntılarını da temizler.",
+        "Cilt-akciğer bağlantısını düzenleyerek, solunum sisteminde biriken toksinlerin cilt üzerinden dışa atılmasını dengeler.",
+        "Kalıtsal veya baskılanmış hastalık eğilimlerini dengeleyerek bağışıklık sisteminin doğal ritmine dönmesini sağlar.",
+        "Cilt yüzeyinde sağlıklı hücre yenilenmesini destekleyerek, lezyon sonrası sağlıklı doku oluşumunu teşvik eder."
+      ],
+      "area-of-influence": [
+        "Thuja'nın Anti-Sikotik Miazmatik Etkisi ve Cilt-Akciğer Bağlantısı",
+        "Virüs Kaynaklı Cilt Lezyonlarına Karşı Bağışıklık Destek Mekanizması",
+        "Ciltteki Anormal Hücresel Büyümenin Düzenlenmesi",
+        "Enflamasyonu Azaltma ve Doku Onarımı"
+      ],
+      "packing": ["20 ml", "50 ml", "100 ml"]
+    },
+    "trichofff": {
+      "name": "Trichofff",
+      "purpose-of-use": [
+        "Mantar enfeksiyonlarının yayılmasını engelleyerek, etkilenen bölgelerin hızla iyileşmesini destekler. Bağışıklık sistemini aktive ederek, kronik ve tekrarlayan mantar enfeksiyonlarına karşı direnç oluşturur.",
+        "Miazmatik temizleme etkisiyle, tedavi edilen deri hastalıklarının derinlemesine iyileşmesini sağlar.",
+        "Doku yenilenmesini teşvik ederek, sağlıklı bir cilt yapısının yeniden oluşmasını sağlar ve deri bariyerini güçlendirerek, mantar ve diğer patojenlere karşı uzun vadeli koruma sunar."
+      ],
+      "area-of-influence": [
+        "Miazmatik ve Antifungal Etkisi",
+        "Derinleşmiş Deri Enfeksiyonlarına Karşı Antimikrobiyal ve Antifungal Mekanizma",
+        "Ciltteki Enflamasyonu ve Hücresel Hasarı Dengeleme",
+        "Doku Onarımı ve Cilt Bariyerinin Güçlendirilmesi"
+      ],
+      "packing": ["20 ml", "50 ml", "100 ml"]
+    },
+    "holowin": {
+      "name": "Holowin",
+      "purpose-of-use": [
+        "İshalin süresini ve şiddetini azaltarak, bakteriyel ve viral enfeksiyonlara bağlı ishalin etkilerini hafifletir.",
+        "Bağışıklık sistemini güçlendirerek, bağırsak enfeksiyonlarına karşı uzun vadeli direnç sağlar.",
+        "Su ve elektrolit dengesini koruyarak, ishal nedeniyle oluşabilecek dehidrasyonu engeller.",
+        "Bağırsak florasını destekleyerek, sindirim sisteminin uzun vadeli dengesini sağlar.",
+        "Toksinlerin atılmasını hızlandırarak, bağırsaktan toksinlerin atılmasını hızlandırarak sepsis ve komplikasyon risklerini azaltır.",
+        "Besin emilimini artırarak, ishale bağlı kilo kaybını engeller ve buzağının büyümesini destekler."
+      ],
+      "area-of-influence": [
+        "Buzağılarda Gastrointestinal Enfeksiyonlara Karşı Koruma",
+        "Bakteriyel ve Viral Toksinlere Karşı Detoksifikasyon",
+        "Su ve Elektrolit Dengesinin Korunması",
+        "Bağırsak Florasının Düzenlenmesi ve Probiyotik Destek",
+        "Bağışıklık Sistemini Güçlendirerek Tekrarlayan İshalleri Önleme"
+      ],
+      "packing": ["100 ml", "250 ml", "500 ml", "1 L"]
+    },
+    "respofix": {
+      "name": "Respofix",
+      "purpose-of-use": [
+        "Bronşları açarak, hava akışını artırır.",
+        "Bağışıklık hücrelerini aktive ederek, enfeksiyonlara karşı savunmayı güçlendirir.",
+        "İnflamasyonu azaltarak, akciğer dokusunu korur.",
+        "Mukusu dengeler, öksürüğü hafifletir.Alerjik reaksiyonları baskılar."
+      ],
+      "area-of-influence": [
+        "Bağışıklık Yanıtının Güçlendirilmesi",
+        "Solunum Fonksiyonlarının Desteklenmesi (Bronş Açıcı ve Mukolitik Etki)",
+        "Solunum Yolu Enfeksiyonlarına Karşı Koruma (Antibakteriyel ve Antiviral Mekanizmalar)",
+        "Alerjik Reaksiyonların Düzenlenmesi"
+      ],
+      "packing": ["20 ml", "50 ml", "100 ml"]
+    },
+    "hepafix": {
+      "name": "Hepafix",
+      "purpose-of-use": [
+        "Karaciğer fonksiyonlarını destekleyerek, toksinlerin atılmasını hızlandırır.",
+        "Bağışıklık sistemini güçlendirerek, hastalıklara karşı direnç sağlar",
+        "Üreme sağlığını ve hormon dengesini düzenleyerek, enerji seviyelerini artırarak genel metabolizmayı iyileştirir."
+      ],
+      "area-of-influence": [
+        "Karaciğer Destek Mekanizması",
+        "Bağışıklık Sisteminin Güçlendirilmesi",
+        "Hormon ve Üreme Sistemi Desteği",
+        "Metabolik ve Sinirsel Destek Mekanizması"
+      ],
+      "packing": ["20 ml", "50 ml", "100 ml"]
+    },
+    "pullmofix": {
+      "name": "Pullmofix",
+      "purpose-of-use": [
+        "Bronşları açarak, hava akışını artırır.",
+        "Bağışıklık hücrelerini aktive ederek, enfeksiyonlara karşı savunmayı güçlendirir.",
+        "İnflamasyonu azaltarak, akciğer dokusunu korur.",
+        "Mukusu dengeler, öksürüğü hafifletir.Alerjik reaksiyonları baskılar."
+      ],
+      "area-of-influence": [
+        "Bağışıklık Yanıtının Güçlendirilmesi",
+        "Solunum Fonksiyonlarının Desteklenmesi (Bronş Açıcı ve Mukolitik Etki)",
+        "Solunum Yolu Enfeksiyonlarına Karşı Koruma (Antibakteriyel ve Antiviral Mekanizmalar)",
+        "Alerjik Reaksiyonların Düzenlenmesi"
+      ],
+      "packing": ["20 ml", "50 ml", "100 ml"]
+    },
+    "ultra-start": {
+      "name": "Ultra-Start",
+      "area-of-influence": [
+        "Bağışıklık Güçlendirme ve Hastalık Direnci",
+        "Sindirim ve Bağırsak Sağlığı",
+        "Büyüme ve Kas Gelişimini Destekleme",
+        "Solunum Sağlığı ve Stres Yönetimi"
+      ],
+      "packing": ["100 gr", "250 gr", "500 gr", "1 kg"]
+    },
+    "3-buff-s": {
+      "name": "3-Buff-S",
+      "area-of-influence": [
+        "Enerji ve Metabolik Destek",
+        "Sindirim ve Asit-Baz Dengesi",
+        "Kemik ve Kas Sağlığı",
+        "Koruyucu ve Destekleyici Etki"
+      ],
+      "packing": ["1 kg", "2.5 kg", "5 kg"]
+    },
+    "diar-end": {
+      "name": "Diar-End",
+      "purpose-of-use": [
+        "İshalin etkilerini azaltarak hızlı toparlanmayı destekler.",
+        "Elektrolit kaybını önleyerek dehidrasyonu engeller",
+        "Bağırsak florasını düzenleyerek sindirim sağlığını iyileştirir.",
+        "Bağışıklık sistemini güçlendirerek hastalıklara karşı koruma sağlar."
+      ],
+      "area-of-influence": [
+        "Hızlı Rehidrasyon ve Elektrolit Dengesi",
+        "Bağırsak Mikrobiyotasını Destekler",
+        "Bağışıklık Sistemini Güçlendirir"
+      ],
+      "packing": ["100 gr", "250 gr", "500 gr", "1 kg"]
+    },
+    "sürwin": {
+      "name": "Sürwin",
+      "purpose-of-use": [
+        "Kabızlık ve sindirim problemlerini hafifletir.",
+        "Bağırsak hareketlerini düzenler, sindirim sisteminin sağlıklı çalışmasını destekler.",
+        "Toksin atımını hızlandırarak genel bağırsak sağlığını iyileştirir."
+      ],
+      "area-of-influence": [
+        "Bağırsak Temizliği ve Düzenleyici Etki",
+        "Sindirim Sistemini Destekler",
+        "Toksin Atımı ve Elektrolit Dengesi"
+      ],
+      "packing": ["1 kg", "2.5 kg", "5 kg"]
+    },
+    "pasivet": {
+      "name": "Pasivet",
+      "purpose-of-use": [
+        "Boğaların stres seviyelerini düşürerek daha sakin ve dengeli bir davranış sergilemelerini sağlar.",
+        "Hayvanın rahatlamasını sağlayarak, agresif ve huzursuz davranışları kontrol altına alır.",
+        "Hayvanın yemden yararlanma oranını arttırır."
+      ],
+      "area-of-influence": [
+        "Stres Azaltıcı Etki",
+        "Fiziksel ve Psikolojik Denge",
+        "Psiko-fiziksel Destek"
+      ],
+      "packing": ["100 ml", "250 ml", "500 ml", "1 L"]
+    },
+    "naturojen": {
+      "name": "Naturojen",
+      "purpose-of-use": [
+        "Dişi hayvanlarda kızgınlık belirtilerini artırarak, üreme döngüsünün sağlıklı bir şekilde işlemesini sağlar.",
+        "Çiftleşmeye hazırlanan hayvanlarda hormon seviyelerini düzenleyerek, üreme verimliliğini artırır.",
+        "Üreme döneminde daha verimli sonuçlar elde edilmesine yardımcı olur ve çiftlik yönetiminde yüksek performans sağlar."
+      ],
+      "area-of_influence": [
+        "Üreme Sağlığını ve Kızgınlık Döngüsünü",
+        "Kalsiyum ve Minerallerle Destekler",
+        "Doğal Bileşenlerle Zenginleştirilmiş Destek"
+      ],
+      "packing": ["20 ml", "50 ml", "100 ml"]
+    },
+    "win-fresh": {
+      "name": "Win-Fresh",
+      "purpose-of-use": [
+        "Solunum yolları sağlığını iyileştirmek, tıkanıklığı ve enfeksiyon riskini azaltmak.",
+        "Bağışıklık sistemi fonksiyonlarını güçlendirmek ve enfeksiyonlara karşı direnç sağlamak.",
+        "Vücutta iltihaplanmayı azaltarak rahatlama sağlamak.",
+        "Sindirim sistemini dengeleyerek genel metabolizma sağlığını optimize etmek.",
+        "Hayvanların genel sağlığını ve refahını artırmak."
+      ],
+      "area-of_influence": [
+        "Solunum Yollarını Destekler",
+        "Bağışıklık Sistemini Güçlendirir",
+        "Antiinflamatuar Etki",
+        "Sindirim ve Metabolizma Desteği",
+        "Genel Sağlık ve İyi Hallerini Artırır"
+      ],
+      "packing": ["20 ml", "50 ml", "100 ml"]
+    },
+    "win-maxi-cell": {
+      "name": "Win-Maxi-Cell",
+      "purpose-of-use": [
+        "Genel Sağlık Desteği: Vitamin ve mineral içeriği ile hayvanların genel sağlığını iyileştirir ve tüm vücut fonksiyonlarını optimize eder.",
+        "Bağışıklık Sistemini Güçlendirir: Antioksidan özellikleri sayesinde vücutta serbest radikal hasarını azaltır ve bağışıklık yanıtını artırır.",
+        "Büyüme ve Performans Artışı: Amino asitler, hayvanların büyüme hızını artırır ve kas gelişimini destekler.",
+        "Metabolizma ve Sindirim Sistemi Desteği: Esansiyel yağ karışımları ve amino asitler, sindirim sağlığını iyileştirir ve besin emilimini optimize eder.",
+        "Kemik ve Kas Sağlığını Destekler: Vitamin D ve K ile birlikte, kemik yoğunluğunu artırır ve kas fonksiyonlarını iyileştirir."
+      ],
+      "area-of_influence": [
+        "Vitamin Destekleri",
+        "Mineraller ve İz Elementler",
+        "Esansiyel Yağ Karışımları",
+        "Esansiyel Amino Asitler"
+      ],
+      "packing": ["100 ml", "250 ml", "500 ml", "1 L"]
+    },
+    "win-phos": {
+      "name": "Win-Phos",
+      "purpose-of_use": [
+        "Genel Sağlık Desteği: Mineraller ve amino asitlerin birleşimi, vücudun temel fonksiyonlarını iyileştirir ve genel sağlık seviyesini artırır.",
+        "Bağışıklık Sistemi Güçlendirme: Çinko, bakır, demir ve selenyum gibi mineraller bağışıklık yanıtlarını destekler ve hastalıklara karşı direnç sağlar.",
+        "Kemik ve Kas Sağlığı: Kalsiyum, fosfor ve magnezyum, güçlü kemikler ve sağlıklı kas yapısını destekler.",
+        "Enerji Üretimi ve Kas Gelişimi: Metiyonin ve L-Lizin, kas gelişimini ve genel enerji üretimini iyileştirerek performansı artırır.",
+        "Sindirim ve Metabolizma Desteği: Mineral ve amino asit içeriği, sindirim sisteminin sağlıklı çalışmasını destekler ve besin emilimini artırır."
+      ],
+      "area-of_influence": ["Mineraller", "Esansiyel Amino Asitler"],
+      "packing": ["100 ml", "250 ml", "500 ml", "1 L"]
+    },
+    "wind-dose-c": {
+      "name": "Wind-Dose-C",
+      "purpose-of_use": [
+        "Elektrolit ve Asit-Baz Dengesinin Korunması: Bu premiks, vücutta sıvı ve elektrolit dengesinin düzenlenmesini sağlar, enerji seviyelerini artırır ve hayvanların genel metabolizmasını dengeleyerek sağlıklarını iyileştirir.",
+        "Sindirim Sağlığı: Laktoz monohidrat ve Ent. Faceium, bağırsak sağlığını iyileştirir ve sindirimi kolaylaştırır.",
+        "Yüksek Performans ve Dayanıklılık: Enerji üretimini artırarak, stres altında dahi yüksek performans sergileyen hayvanlar için idealdir.",
+        "Genel Metabolizma Desteği: Glisin ve glutamik asit gibi bileşenler, vücudun tüm metabolik süreçlerini hızlandırarak, hayvanın genel sağlığını iyileştirir."
+      ],
+      "area-of_influence": [
+        "Elektrolit Dengeleyiciler",
+        "Metabolik Destekleyiciler",
+        "Diğer Bileşenler"
+      ],
+      "packing": ["100 ml", "250 ml", "500 ml", "1 L"]
+    },
+    "win-calf": {
+      "name": "Win-Calf",
+      "purpose-of_use": [
+        "Yeme Geçiş Dönemi Desteği: Buzağı ve kuzuların yem geçişi sırasında besinlerin etkili bir şekilde emilimini sağlayarak, sindirim sistemini güçlendirir ve adaptasyon sürecini hızlandırır.",
+        "Bağışıklık Güçlendirme: İçeriğindeki vitamin ve mineraller, genç hayvanların bağışıklık sistemini destekler, hastalıklara karşı direncin artırılmasına yardımcı olur.",
+        "Büyüme ve Performans Artışı: Organik metiyonin ve lizin gibi besin bileşenleri, büyüme hızını artırır ve kas gelişimini destekler.",
+        "Sindirim Sağlığı: Prebiyotikler ve maya bileşenleri, sindirim sistemindeki sağlıklı mikrobiyota dengesini sağlar, besin emilimini iyileştirir.",
+        "Kemik ve Iskelet Sağlığı: Kalkerli deniz algesi ve kalsiyum destekleri, kemik gelişimini teşvik eder ve ruminantların güçlü iskelet yapılarının oluşmasına yardımcı olur."
+      ],
+      "area-of_influence": [
+        "Vitamin ve Mineraller",
+        "Amino Asit ve MEtabolizma Desteği",
+        "Mineral ve Prebiyotik Destekleyiciler",
+        "Aromatik Bileşenler"
+      ],
+      "packing": ["1 kg", "2.5 kg", "5 kg"]
+    },
+    "besi-premium": {
+      "name": "Besi-Premium",
+      "purpose-of-use": [
+        "Hızlı Büyüme ve Gelişim: Vitaminler ve minerallerin yüksek konsantrasyonu, besi ruminantlarının hızlı ve sağlıklı bir şekilde büyümelerini destekler.",
+        "Bağışıklık Sistemi Desteği: İçeriğindeki yüksek kaliteli selenyum, çinko ve diğer vitaminler, bağışıklık fonksiyonlarını güçlendirir ve hastalıklara karşı direnç sağlar.",
+        "Sindirim Sağlığı: İnaktif maya ve bentonit gibi bileşenler, sindirim sisteminin sağlıklı çalışmasına yardımcı olur, mikrofloranın dengesini sağlar.",
+        "Kemik ve İskelet Sağlığı: Vitamin D3, kalsiyum ve fosfor bileşenleri, güçlü bir kemik yapısının oluşmasını sağlar.",
+        "Hücre Yenilenmesi ve Antioksidan Koruma: Alfa tokoferol (Vitamin E) ve selenyum gibi antioksidan bileşenler, hücresel hasarı önler ve yaşlanmayı geciktirir."
+      ],
+      "area-of_influence": [
+        "Vitaminler",
+        "Mineraller",
+        "Destekleyici Bileşenler"
+      ],
+      "packing": ["1 kg", "2.5 kg", "5 kg"]
+    },
+    "adomega": {
+      "name": "Adomega",
+      "purpose_of_use": [
+        "ADOMEGA, ruminantlarda (buzağı, kuzu, oğlak, inek, koyun, keçi) bağışıklık sistemi, epitel dokular, üreme sağlığı ve sisnirsel denge üzerinde kritik roller üstlenen A, D3 ve E vitaminlerinin, anti-inflamatuvar etkili Omega-3 yağ asitleriyle sinerjik şekilde birleştirildiği sıvı destek ürünüdür.",
+        "Vitamin A mukolaz bariyer bütünlüğünü korur, Vitamin D3 kalsiyum-fosfor metabolizmasını düzenlerken, Vitamin E hücresel düzeyde antioksidan koruma sağlar. Omega-3 yağ asitleri ise inflamasyonu baskılayarak damar, sinir ve üreme sistemlerinin sağlıklı işleyişini destekler."
+      ],
+      "area_of_influence": [
+        "Bağışıklık sistemini güçlendirir",
+        "Kas-iskelet ve kemik gelişimini destekler",
+        "Üreme verimini ve döl tutma oranlarını artırır",
+        "Epitel bütünlüğünü ve cilt-tüy kalitesini iyileştirir",
+        "Sıcaklık ve üretim stresine karşı fizyolojik dayanıklılık sağlar",
+        "Sinirsel iletim ve beyin fonksiyonlarını destekler"
+      ],
+      "packing": ["100 ml", "250 ml", "500 ml", "1 L"]
+    },
+    "selemax": {
+      "name": "Selemax",
+      "purpose_of_use": [
+        "SELEMAX, E vitamini, selenyum ve çinko içeren güçlü bir antioksidan formüldür. Remiantlarda (buzağı, kuzu, oğlak, inek, koyun ve keçilerde) bağışıklık fonksiyonlarının güçlendirilmesi, kas sağlığının korunması, epitel bütünlüğünün sürdürülmesi ve üreme verimliliğinin artırılması amacıyla kullanılır.",
+        "Vitamin E, hücre zarlarını serbest radikallere karşı korurken, sodyum selenit glutatyon peroksidaz enziminin kofaktörü olarak hücresel oksidatif stresi azaltır. Çünko ise birçok enzim sisteminde rol alarak yar aiyileşmesi, cilt sağlığı ve bağışıklık aktivitesi üzerinde etkilidir."
+      ],
+      "area_of_influence": [
+        "Hücresel antioksidan savunmayı güçlendirir",
+        "Kas dokusunu ve sinirsel iletimi korur",
+        "Üreme sisteminde sperm ve yumurta kalitesini artırır",
+        "Deri-tüy sağlığını iyileştirir, tüy dökülmesini azaltır",
+        "Enfeksiyonlara karşı bağışıklık yanıtını artırır",
+        "Gelişme geriliği riskini azaltır, canlıık kazandırır"
+      ],
+      "packing": ["100 ml", "250 ml", "500 ml", "1 L"]
+    },
+    "vitabolic": {
+      "name": "Vitabolic",
+      "purpose_of_use": [
+        "VITABOLIC buzağı, kuzu ve oğlaklardan başlayarak yüksek verimli süt ve et ruminantlarında enerji metabolizmasını düzenleyen, bağışıklığı güçlendiren ve sinir sistemini destekleyen, yüksek yoğunluklu B vitamini kombinasyonudur. Özellikle büyüme, geçiş, stres ve hastalık dönemlerinde metabolik dengeyi korumak ve performansı artırmak amacıyla kullanılır."
+      ],
+      "area_of_influence": [
+        "Enerji metabolizmasını hızlandırır",
+        "Büyüme ve gelişmeyi destekler",
+        "Sinir sistemi ve kas koordinasyonunu korur",
+        "İştah ve yemden yararlanmayı artırır",
+        "Stres ve hastalık sonrası toparlanmayı hızlandırır",
+        "Bağışıklığı ve genel dayanıklığı güçlendirir"
+      ],
+      "packing": ["100 ml", "250 ml", "500 ml", "1 L"]
+    },
+    "winmast": {
+      "name": "Winmast",
+      "purpose_of_use": [
+        "Meme sağlığını iyileştirir",
+        "Cilt bakımını sağlar",
+        "Tahrişleri ve yaraları azaltır",
+        "Enfeksiyonları engeller",
+        "Meme uçlarının sağlıklı bir şekilde çalışmasını sağlar. Emziren hayvanlarda, düzenli kullanımı, meme uçlarını koruyarak süt üretimini olumsuz etkileyecek sorunların önlenmesine katkı sağlar"
+      ],
+      "area_of_influence": [
+        "Sarı Kantaron Yağı",
+        "Kalendula Yağı (Arap Çiçeği Yağı)",
+        "Gliserol",
+        "Kolloidal Gümüş Suyu"
+      ],
+      "packing": ["100 ml", "250 ml", "500 ml"]
+    },
+    "scaroff": {
+      "name": "Scaroff",
+      "purpose_of_use": [
+        "Yara bakım spreyi, doğal bitkisel özler ve homeopatik bileşenlerle formüle edilmiştir. İçeriğindeki Calendula (Arap Çiçeği) Yağı ve Hypericum (Sarı Kantaron) Yağı, cilt sağlığını iyileştiren, yatıştırıcı ve tedavi edici özelliklere sahip doğal bileşiklerdir. Scaroff, yaraların hızlı iyileşmesini destekler, cildin yenilenmesini hızlandırır ve enfeksiyon risklerini azaltır."
+      ],
+      "area_of_influence": [
+        "Calendula Yağı",
+        "Hypericum Yağı (Sarı Kantaron Yağı)",
+        "Homeopatik Bileşenler"
+      ],
+      "packing": ["250 ml"]
+    },
+    "eyewin": {
+      "name": "Eyewin",
+      "purpose_of_use": [
+        "Eyewin göz bakım spreyi, göz sağlığını destekleyen ve rahatlatan bir formülle geliştirilmiştir. İçeriğindeki Borik Asit, antiseptik özellikleri ile göz çevresindeki enfeksiyon risklerini azaltırken, gözdeki tahrişleri yatıştırmaya ve göz sağlığını korumaya yardımcı olur. Düzenli kullanım, gözlerdeki kuruluk, kızarıklık ve yabancı cisim hissi gibi sorunları azaltır, gözleri temizler ve tazeler."
+      ],
+      "area_of_influence": ["Borik Asit"],
+      "packing": ["250 ml"]
+    },
+    "winatox": {
+      "name": "Winatox",
+      "purpose_of_use": [
+        "Diatom içeren hayvan haşere ve parazit kovucu toz, doğal ve etkili bir formülle, evcil ve çiftlik hayvanlarını zararlı parazitlerden korur. Diatom tozu, mikroskobik silis tabakalarından oluşan doğal bir bileşen olup, haşereleri ve cilt parazitlerini etkili bir şekilde öldürür. Bu toz, hayvanların sağlığını tehdit eden pire, bit, kene ve diğer parazitleri yok ederken, hayvanların cilt sağlığını korur."
+      ],
+      "area_of_influence": [
+        "Diatom Tozu (Diatomaceous Earth)",
+        "Cilt Koruyucu Özellikler"
+      ],
+      "packing": ["1 kg"]
+    }
+  },
+
+  "blogs": {
+    "all-blog": "Tüm Blog Yazıları",
+    "last-blog": "Son Yazılarımız",
+    "read-more": "Devamını Oku"
+  },
+  "contact": {
+    "contact-text": "İletişim",
+    "contact-us": "Bize Ulaşın"
+  },
+  "footer": {
+    "address": "Adres",
+    "telephone": "Telefon",
+    "mail": "E-mail",
+    "menu": "MENÜ",
+    "why-us": "NEDEN BİZ?",
+    "why-us-text": "Yenilikçi ve güvenilir çözümlerimizle hayvan sağlığını önceliklendiriyor, sektördeki tecrübemizle fark yaratıyoruz.",
+    "follow-us": "BİZİ TEKİP EDİN"
+  },
+  "number": {
+    "number-nutriwin": "Sayılarla Nutriwin",
+    "number-year": "Yıllık Tecrübe",
+    "number-happy": "Mutlu Hayvan Dostu",
+    "number-product": "Yenilikçi Ürün",
+    "number-country": "Ülke"
+  }
+}

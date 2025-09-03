@@ -5,8 +5,11 @@ import { useEffect } from "react";
 import Link from "next/link";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Image from "next/image";
+import { useTranslation } from "@/hooks/useTranslation";
 
 export default function Slider() {
+  const { t, locale } = useTranslation();
+
   const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({
     loop: true,
     slides: { perView: 1 },
@@ -23,11 +26,19 @@ export default function Slider() {
     return () => clearInterval(timer);
   }, [slider]);
 
-  const slides = [
-    { img: "/images/slider1.jpg", alt: "Büyükbaş Hayvan Grubu" },
-    { img: "/images/slider2.jpg", alt: "Küçükbaş Hayvan Grubu" },
-    { img: "/images/slider3.jpg", alt: "Kanatlı Hayvan Grubu" },
-  ];
+  // locale değişkenine göre farklı resim yolları atıyoruz
+  const slides =
+    locale === "en"
+      ? [
+          { img: "/images/slider1_en.jpg", alt: "Cattle Group" },
+          { img: "/images/slider2_en.jpg", alt: "Small Ruminant Group" },
+          { img: "/images/slider3_en.jpg", alt: "Poultry Group" },
+        ]
+      : [
+          { img: "/images/slider1.jpg", alt: "Büyükbaş Hayvan Grubu" },
+          { img: "/images/slider2.jpg", alt: "Küçükbaş Hayvan Grubu" },
+          { img: "/images/slider3.jpg", alt: "Kanatlı Hayvan Grubu" },
+        ];
 
   return (
     <div className="relative" style={{ height: "calc(100vh - 80px)" }}>
@@ -51,7 +62,7 @@ export default function Slider() {
             href="/urunlerimiz"
             className="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition"
           >
-            Ürünleri İncele
+            {t("homepage.explore_products")}
           </Link>
           <div className="mt-8 animate-bounce">
             <Icon

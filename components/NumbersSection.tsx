@@ -1,4 +1,5 @@
 "use client";
+import { useTranslation } from "@/hooks/useTranslation";
 import React from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
@@ -9,12 +10,14 @@ function NumbersSection() {
     threshold: 0.1, // Bölümün %10'u görünür olduğunda tetikle
   });
 
+  const { t } = useTranslation();
+
   return (
     <div ref={ref} className="mt-16">
       <div className="container mx-auto px-4 text-center">
         <div className="relative inline-block mb-12">
           <h3 className="text-4xl font-bold text-red-600">
-            Sayılarla Nutriwin
+            {t("number.number-nutriwin")}
           </h3>
           {/* Başlığın altına eklenen kırmızı çizgi */}
           <div className="border-b-2 border-red-600 w-24 mt-2"></div>
@@ -42,7 +45,7 @@ function NumbersSection() {
               {inView && <CountUp start={0} end={5} duration={2.5} />}+
             </div>
             <div className="text-lg text-gray-600 font-semibold">
-              Yıllık Tecrübe
+              {t("number.number-year")}
             </div>
           </div>
           {/* Sayı Kartı 2: Mutlu Hayvan Dostu */}
@@ -66,7 +69,7 @@ function NumbersSection() {
               {inView && <CountUp start={0} end={150} duration={2.5} />}+
             </div>
             <div className="text-lg text-gray-600 font-semibold">
-              Mutlu Hayvan Dostu
+              {t("number.number-happy")}
             </div>
           </div>
           {/* Sayı Kartı 3: Yenilikçi Ürün */}
@@ -92,7 +95,7 @@ function NumbersSection() {
               {inView && <CountUp start={0} end={20} duration={2.5} />}+
             </div>
             <div className="text-lg text-gray-600 font-semibold">
-              Yenilikçi Ürün
+              {t("number.number-product")}
             </div>
           </div>
           {/* Sayı Kartı 4: Ülke */}
@@ -120,7 +123,9 @@ function NumbersSection() {
             <div className="text-6xl font-extrabold text-gray-800 mb-1">
               {inView && <CountUp start={0} end={10} duration={2.5} />}+
             </div>
-            <div className="text-lg text-gray-600 font-semibold">Ülke</div>
+            <div className="text-lg text-gray-600 font-semibold">
+              {t("number.number-country")}
+            </div>
           </div>
         </div>
       </div>

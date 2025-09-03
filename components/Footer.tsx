@@ -1,32 +1,37 @@
+// components/Footer.tsx
+
 import React from "react";
 import Link from "next/link";
-import Image from "next/image"; // Next.js Image bileşeni için
+import Image from "next/image";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import { useTranslation } from "@/hooks/useTranslation";
 
-const navLinks = [
-  {
-    name: "ANASAYFA",
-    href: "/",
-  },
-  {
-    name: "HAKKIMIZDA",
-    href: "/hakkimizda",
-  },
-  {
-    name: "ÜRÜNLERİMİZ",
-    href: "/urunlerimiz",
-  },
-  {
-    name: "BLOG",
-    href: "/blog",
-  },
-  {
-    name: "İLETİŞİM",
-    href: "/iletisim",
-  },
-];
+const Footer = () => {
+  const { t } = useTranslation();
 
-function Footer() {
+  const navLinks = [
+    {
+      name: t("navbar.home"),
+      href: "/",
+    },
+    {
+      name: t("navbar.about"),
+      href: "/hakkimizda",
+    },
+    {
+      name: t("navbar.products"),
+      href: "/urunlerimiz",
+    },
+    {
+      name: t("navbar.blog"),
+      href: "/blog",
+    },
+    {
+      name: t("navbar.contact"),
+      href: "/iletisim",
+    },
+  ];
+
   return (
     <div className="bg-gray-800 text-white p-10 px-20">
       <div className="flex flex-col md:flex-row justify-between h-auto md:h-[250px]">
@@ -36,19 +41,18 @@ function Footer() {
           <Link href="/">
             <Image
               width={200}
-              height={60} // Görüntü kalitesi için height değeri eklendi
+              height={60}
               src="/images/logo_beyaz.png"
               alt="Nutriwin Logo"
               className="mb-4"
             />
           </Link>
-
           <div className="mb-2">
-            <span className="font-bold">Adres:</span> Nutriwin Kimya İlaç San.
-            Tic. Ltd. Şti. Fevzi çakmak Mah. 10514. Sok. No:47 Karatay/Konya
+            <span className="font-bold">{t("footer.address")}:</span>{" "}
+            {t("footer.address_text")}
           </div>
           <div className="mb-2">
-            <span className="font-bold">Telefon:</span>{" "}
+            <span className="font-bold">{t("footer.telephone")}:</span>{" "}
             <a
               href="https://wa.me/908503040946"
               target="_blank"
@@ -59,7 +63,7 @@ function Footer() {
             </a>
           </div>
           <div>
-            <span className="font-bold">E-mail:</span>{" "}
+            <span className="font-bold">{t("footer.mail")}:</span>{" "}
             <a
               href="mailto:info@nutriwin.com.tr"
               className="hover:text-red-500 transition-colors duration-200"
@@ -68,11 +72,10 @@ function Footer() {
             </a>
           </div>
         </div>
-
         {/* Menü Bölümü */}
         <div className="mb-8 md:mb-0">
           <div className="uppercase font-semibold mb-2 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-1/3 after:h-0.5 after:bg-red-500">
-            Menü
+            {t("footer.menu")}
           </div>
           {navLinks.map((navLink) => (
             <div key={navLink.name} className="mb-1">
@@ -85,24 +88,19 @@ function Footer() {
             </div>
           ))}
         </div>
-
         {/* Neden Biz ve Sosyal Medya Bölümü */}
         <div>
           {/* Neden Biz */}
           <div className="mb-8">
             <div className="uppercase font-semibold mb-2 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-1/3 after:h-0.5 after:bg-red-500">
-              Neden biz?
+              {t("footer.why-us")}
             </div>
-            <div className="max-w-xs text-sm">
-              Yenilikçi ve güvenilir çözümlerimizle hayvan sağlığını
-              önceliklendiriyor, sektördeki tecrübemizle fark yaratıyoruz.
-            </div>
+            <div className="max-w-xs text-sm">{t("footer.why-us-text")}</div>
           </div>
-
           {/* Bizi Takip Edin */}
           <div>
             <div className="uppercase font-semibold mb-2 relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-1/3 after:h-0.5 after:bg-red-500">
-              Bizi takip edin
+              {t("footer.follow-us")}
             </div>
             <div className="flex space-x-4">
               {/* Instagram linki */}
@@ -133,6 +131,6 @@ function Footer() {
       </div>
     </div>
   );
-}
+};
 
 export default Footer;

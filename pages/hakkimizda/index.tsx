@@ -2,16 +2,20 @@ import About from "@/components/AboutPage/About";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import PageBanner from "@/components/PageBanner";
+import { useTranslation } from "@/hooks/useTranslation";
 import React from "react";
 
 function index() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const { t } = useTranslation();
+
   return (
     <div>
       <Navbar />
 
       {/* Slider tam genişlikte kalacak */}
       <div className="mt-[80px]">
-        <PageBanner title="Hakkımızda"></PageBanner>
+        <PageBanner title={t("about.about")}></PageBanner>
       </div>
 
       {/* Ortalanmış içerikler */}

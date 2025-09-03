@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslation } from "@/hooks/useTranslation";
 
 interface ProductCardProps {
   name: string;
@@ -10,6 +11,7 @@ interface ProductCardProps {
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ name, link, image }) => {
+  const { t } = useTranslation();
   return (
     <div className="relative rounded-xl  hover:shadow-lg transition-shadow duration-300 bg-white overflow-hidden group">
       {/* Resim Alanı */}
@@ -34,7 +36,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ name, link, image }) => {
       <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <Link href={link} legacyBehavior>
           <a className=" flex items-center gap-3 bg-transparent text-white font-medium py-2 px-6 rounded-md border border-white transition-transform duration-300 transform scale-95 group-hover:scale-100">
-            Detaya Git
+            {t("products.see-detail")}
           </a>
         </Link>
       </div>

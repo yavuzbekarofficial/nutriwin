@@ -9,12 +9,14 @@ import BlogSidebar from "@/components/BlogPage/BlogSidebar";
 import Image from "next/image";
 import { blogs } from "@/data/blogs";
 import Link from "next/link";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const BlogDetay: React.FC = () => {
   const router = useRouter();
   const { blog_slug } = router.query;
 
   const blog = blogs.find((b) => b.slug === blog_slug);
+  const { t } = useTranslation();
 
   if (!blog) {
     return <div>Blog yazısı bulunamadı.</div>;
@@ -53,7 +55,7 @@ const BlogDetay: React.FC = () => {
                 d="M10 19l-7-7m0 0l7-7m-7 7h18"
               />
             </svg>
-            Tüm Bloglar
+            {t("blogs.all-blog")}
           </Link>
         </div>
 

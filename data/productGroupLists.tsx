@@ -2,23 +2,35 @@
 
 export const productGroupLists = [
   {
-    title: "Homeopatik Ürünleri",
-    slug: "homeopatik", // Bu satır eklendi
+    title: {
+      tr: "Homeopatik Ürünleri",
+      en: "Homeopathic Products",
+    },
+    slug: "homeopatik",
     image: "/images/homeopatik.jpg",
   },
   {
-    title: "Besleme Ürünleri",
-    slug: "besleme", // Bu satır eklendi
+    title: {
+      tr: "Besleme Ürünleri",
+      en: "Feeding Products",
+    },
+    slug: "besleme",
     image: "/images/besleme.jpg",
   },
   {
-    title: "Bakım Ürünleri",
-    slug: "bakim", // Bu satır eklendi
+    title: {
+      tr: "Bakım Ürünleri",
+      en: "Care Products",
+    },
+    slug: "bakim",
     image: "/images/bakim.jpg",
   },
   {
-    title: "Boluslar",
-    slug: "boluslar", // Bu satır eklendi
+    title: {
+      tr: "Boluslar",
+      en: "Boluses",
+    },
+    slug: "boluslar",
     image: "/images/boluslar.jpg",
   },
 ];

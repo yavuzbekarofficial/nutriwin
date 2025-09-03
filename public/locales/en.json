@@ -1,0 +1,424 @@
+{
+  "navbar": {
+    "home": "Homepage",
+    "about": "About Us",
+    "products": "Our Products",
+    "blog": "Blog",
+    "contact": "Contact",
+    "contact-now": "CONTACT NOW"
+  },
+  "about": {
+    "about": "About Us",
+    "about-welcome": "Welcome to Nutriwin",
+    "about-more": "More",
+    "about-paragraph1": "Established in 2019, Nutriwin is an innovative brand that develops homeopathic and nutritional support products with the aim of advancing animal health to the highest level. We are the sole company in Turkey capable of producing industrial-scale homeopathic products. With our scientifically-backed formulas, we provide healthy and balanced solutions for a wide range of animals, from pets to livestock.",
+    "about-paragraph2": "In collaboration with our homeopaths and veterinarians, we produce products that enhance animals' quality of life, strengthen their immune systems, and support their development. Guided by the principle of proper nutrition and effective support, Nutriwin prioritizes quality and reliability by using only the finest ingredients.",
+    "about-paragraph3": "Through our continuous R&D efforts, we adopt an eco-friendly and ethical production approach, contributing to the healthy and happy lives of our animal companions. At Nutriwin, we are proud to be a trusted partner in animal health.",
+    "our-mision": "Our Mission",
+    "our-mision1": "To provide high-quality feed additives and therapeutic support products that promote animal health, growth, and productivity through the development of scientific and innovative solutions.",
+    "our-mision2": "To contribute to the sustainable agriculture and livestock sector by improving animal welfare and productivity.",
+    "our-mision3": "To be a reliable business partner for veterinarians, farmers, and producers, and to create customized solutions for their specific needs.",
+    "our-mision4": "To build a sustainable future by protecting the ecological balance with production processes that are sensitive to nature and the environment.",
+    "our-mision5": "To continuously increase customer satisfaction by maintaining the highest standards in R&D and quality.",
+    "our-vision": "Our Vision",
+    "our-vision1": "To be a pioneering leader in the animal health and nutrition sector by providing innovative and scientific solutions that maximize sustainable productivity and welfare. We aim to achieve this by supplying trusted, high-quality, and eco-friendly feed additives and therapeutic support products on a global scale."
+  },
+
+  "products": {
+    "our-product": "Our Products",
+    "all-product": "All Products",
+    "product-group": "Our Product Groups",
+    "group-name": "Group Products",
+    "see-product": "View Products",
+    "see-detail": "View Details",
+    "go-back": "Go Back",
+    "group": "Group",
+    "homeopatik": "Homeopathic Products",
+    "supply": "Feeding Products",
+    "care": "Care Products",
+    "bolus": "Boluses",
+    "purpose-of-use": "Purpose of Use",
+    "area-of-influence": "Area of Influence",
+    "packing": "Packaging",
+    "negrofix": {
+      "name": "Negrofix",
+      "description": "Negrofix is a homeopathic support product specially formulated for animal health. It strengthens the immune system to act against deep infectious conditions such as necrotic tissues and abscessed areas.",
+      "content": "The main effect of Negrofix is to activate the body's self-healing mechanisms, thereby creating a stronger response against infections. The product supports cell regeneration while helping to balance pathological inflammation and tissue decay.",
+      "purpose-of-use": [
+        "Provides effective protection against severe bacterial infections by strengthening the immune system.",
+        "Accelerates the healing process by supporting the drainage of necrotic and abscessed tissues.",
+        "Reduces the risk of chronic infections by balancing inflammatory processes in the skin and mucosa.",
+        "Promotes the formation of healthy tissue by accelerating wound healing.",
+        "Balances autoimmune tendencies by regulating the immune system's overreactions."
+      ],
+      "area-of-influence": [
+        "Influence on Tissue Necrosis and Deep Infections",
+        "Strengthening the Immune Response against Bacterial Infections",
+        "Mechanism for Regulating Abscess and Pathological Inflammation",
+        "Accelerating Tissue Repair and Regeneration"
+      ]
+    },
+    "wartoff": {
+      "name": "Wartoff",
+      "purpose-of-use": [
+        "Supports the treatment of warts, papillomas, and other skin lesions, accelerating their reduction and elimination.",
+        "Modulates the immune system at a cellular level to prevent the recurrence of viral infections. Thanks to Thuja's powerful anti-miasmatic effect, it cleanses not only existing warts but also old infection residues hidden within the body.",
+        "Regulates the skin-lung connection to balance the excretion of toxins accumulated in the respiratory system through the skin.",
+        "Restores the immune system to its natural rhythm by balancing hereditary or suppressed disease tendencies.",
+        "Promotes healthy cell regeneration on the skin surface, encouraging the formation of healthy tissue after a lesion."
+      ],
+      "area-of-influence": [
+        "Thuja's Anti-Psychotic Miasmatic Effect and Skin-Lung Connection",
+        "Immune Support Mechanism Against Virus-Induced Skin Lesions",
+        "Regulation of Abnormal Cellular Growth in the Skin",
+        "Inflammation Reduction and Tissue Repair"
+      ]
+    },
+    "trichofff": {
+      "name": "Trichofff",
+      "purpose-of-use": [
+        "Supports the rapid healing of affected areas by preventing the spread of fungal infections. It activates the immune system, building resistance against chronic and recurrent fungal infections.",
+        "Provides deep healing of treated skin diseases through its miasmatic cleansing effect.",
+        "Promotes tissue regeneration, ensuring the reconstruction of a healthy skin structure and offering long-term protection against fungi and other pathogens by strengthening the skin barrier."
+      ],
+      "area-of-influence": [
+        "Miasmatic and Antifungal Effect",
+        "Antimicrobial and Antifungal Mechanism Against Deep Skin Infections",
+        "Balancing Inflammation and Cellular Damage in the Skin",
+        "Tissue Repair and Strengthening of the Skin Barrier"
+      ]
+    },
+    "holowin": {
+      "name": "Holowin",
+      "purpose-of-use": [
+        "Reduces the duration and severity of diarrhea, alleviating the effects of diarrhea caused by bacterial and viral infections.",
+        "Strengthens the immune system, providing long-term resistance against intestinal infections.",
+        "Prevents dehydration that may occur due to diarrhea by maintaining water and electrolyte balance.",
+        "Supports the intestinal flora, ensuring the long-term balance of the digestive system.",
+        "Accelerates the excretion of toxins from the intestines, reducing the risks of sepsis and complications.",
+        "Increases nutrient absorption, preventing weight loss associated with diarrhea and supporting calf growth."
+      ],
+      "area-of-influence": [
+        "Protection Against Gastrointestinal Infections in Calves",
+        "Detoxification Against Bacterial and Viral Toxins",
+        "Maintenance of Water and Electrolyte Balance",
+        "Regulation of Intestinal Flora and Probiotic Support",
+        "Strengthening the Immune System to Prevent Recurrent Diarrhea"
+      ]
+    },
+    "respofix": {
+      "name": "Respofix",
+      "purpose-of-use": [
+        "Increases airflow by opening the bronchi.",
+        "Strengthens defense against infections by activating immune cells.",
+        "Protects lung tissue by reducing inflammation.",
+        "Balances mucus, alleviates coughing, and suppresses allergic reactions."
+      ],
+      "area-of-influence": [
+        "Strengthening the Immune Response",
+        "Supporting Respiratory Functions (Bronchodilator and Mucolytic Effect)",
+        "Protection Against Respiratory Tract Infections (Antibacterial and Antiviral Mechanisms)",
+        "Regulation of Allergic Reactions"
+      ]
+    },
+    "hepafix": {
+      "name": "Hepafix",
+      "purpose-of-use": [
+        "Accelerates the excretion of toxins by supporting liver functions.",
+        "Provides resistance against diseases by strengthening the immune system.",
+        "Improves overall metabolism by regulating reproductive health and hormonal balance, increasing energy levels."
+      ],
+      "area-of-influence": [
+        "Liver Support Mechanism",
+        "Strengthening the Immune System",
+        "Hormone and Reproductive System Support",
+        "Metabolic and Neural Support Mechanism"
+      ]
+    },
+    "pullmofix": {
+      "name": "Pullmofix",
+      "purpose-of-use": [
+        "Increases airflow by opening the bronchi.",
+        "Strengthens defense against infections by activating immune cells.",
+        "Protects lung tissue by reducing inflammation.",
+        "Balances mucus, alleviates coughing, and suppresses allergic reactions."
+      ],
+      "area-of-influence": [
+        "Strengthening the Immune Response",
+        "Supporting Respiratory Functions (Bronchodilator and Mucolytic Effect)",
+        "Protection Against Respiratory Tract Infections (Antibacterial and Antiviral Mechanisms)",
+        "Regulation of Allergic Reactions"
+      ]
+    },
+    "ultra-start": {
+      "name": "Ultra-Start",
+      "description": "Formulated for healthy growth, strong immunity, and superior performance, UltraStart maximizes productivity by supporting the development of lambs and calves. This advanced premix, containing RFC (Refined Functional Carbonate), optimizes digestive functions while maintaining metabolic balance. The combination of homeopathic, probiotic, biotechnological components, and RFC strengthens the immune system, increases body resistance, and enables animals to grow more efficiently.",
+      "area-of-influence": [
+        "Immune Boosting and Disease Resistance",
+        "Digestion and Gut Health",
+        "Supporting Growth and Muscle Development",
+        "Respiratory Health and Stress Management"
+      ]
+    },
+    "3-buff-s": {
+      "name": "3-Buff-S",
+      "description": "8-Hour Effective Buffering & Liver-Supporting Rumen Regulator",
+      "content": "Prevents acidosis by stabilizing rumen pH, enhances detoxification by supporting liver functions, and maximizes metabolic efficiency.",
+      "area-of-influence": [
+        "Energy and Metabolic Support",
+        "Digestion and Acid-Base Balance",
+        "Bone and Muscle Health",
+        "Protective and Supportive Effect"
+      ]
+    },
+    "diar-end": {
+      "name": "Diar-End",
+      "purpose-of-use": [
+        "Supports rapid recovery by reducing the effects of diarrhea.",
+        "Prevents dehydration by preventing electrolyte loss.",
+        "Improves digestive health by regulating the intestinal flora.",
+        "Provides protection against diseases by strengthening the immune system."
+      ],
+      "area-of-influence": [
+        "Rapid Rehydration and Electrolyte Balance",
+        "Supports Gut Microbiota",
+        "Strengthens the Immune System"
+      ]
+    },
+    "sürwin": {
+      "name": "Sürwin",
+      "purpose-of-use": [
+        "Alleviates constipation and digestive problems.",
+        "Regulates bowel movements, supporting the healthy functioning of the digestive system.",
+        "Improves overall gut health by accelerating toxin excretion."
+      ],
+      "area-of-influence": [
+        "Intestinal Cleansing and Regulatory Effect",
+        "Supports the Digestive System",
+        "Toxin Excretion and Electrolyte Balance"
+      ]
+    },
+    "pasivet": {
+      "name": "Pasivet",
+      "purpose-of-use": [
+        "Reduces stress levels in bulls, enabling them to exhibit calmer and more balanced behavior.",
+        "Controls aggressive and restless behavior by providing relaxation to the animal.",
+        "Increases the animal's feed utilization rate."
+      ],
+      "area-of-influence": [
+        "Stress-Reducing Effect",
+        "Physical and Psychological Balance",
+        "Psycho-physical Support"
+      ]
+    },
+    "naturojen": {
+      "name": "Naturojen",
+      "purpose-of-use": [
+        "Increases heat signs in female animals, ensuring a healthy reproductive cycle.",
+        "Increases reproductive efficiency by regulating hormone levels in animals preparing for mating.",
+        "Helps achieve more efficient results during the breeding season and ensures high performance in farm management."
+      ],
+      "area-of-influence": [
+        "Supports Reproductive Health and the Heat Cycle",
+        "Supports with Calcium and Minerals",
+        "Enriched Support with Natural Components"
+      ]
+    },
+    "win-fresh": {
+      "name": "Win-Fresh",
+      "purpose-of-use": [
+        "To improve respiratory tract health, reducing congestion and infection risk.",
+        "To strengthen immune system functions and provide resistance against infections.",
+        "To provide relief by reducing inflammation in the body.",
+        "To optimize general metabolic health by balancing the digestive system.",
+        "To enhance the overall health and well-being of animals."
+      ],
+      "area-of-influence": [
+        "Supports Respiratory Tract",
+        "Strengthens the Immune System",
+        "Anti-inflammatory Effect",
+        "Digestion and Metabolism Support",
+        "Enhances General Health and Well-being"
+      ]
+    },
+    "win-maxi-cell": {
+      "name": "Win-Maxi-Cell",
+      "purpose-of-use": [
+        "General Health Support: Improves the overall health of animals and optimizes all body functions with its vitamin and mineral content.",
+        "Strengthens the Immune System: Reduces free radical damage in the body and enhances the immune response with its antioxidant properties.",
+        "Increases Growth and Performance: Amino acids accelerate the growth rate of animals and support muscle development.",
+        "Metabolism and Digestive System Support: Essential oil mixtures and amino acids improve digestive health and optimize nutrient absorption.",
+        "Supports Bone and Muscle Health: Along with vitamins D and K, it increases bone density and improves muscle functions."
+      ],
+      "area-of-influence": [
+        "Vitamin Supports",
+        "Minerals and Trace Elements",
+        "Essential Oil Blends",
+        "Essential Amino Acids"
+      ]
+    },
+    "win-phos": {
+      "name": "Win-Phos",
+      "purpose-of-use": [
+        "General Health Support: The combination of minerals and amino acids improves the body's basic functions and increases overall health levels.",
+        "Immune System Strengthening: Minerals like zinc, copper, iron, and selenium support immune responses and provide resistance against diseases.",
+        "Bone and Muscle Health: Calcium, phosphorus, and magnesium support strong bones and healthy muscle structure.",
+        "Energy Production and Muscle Development: Methionine and L-Lysine improve performance by enhancing muscle development and overall energy production.",
+        "Digestion and Metabolism Support: The mineral and amino acid content supports the healthy functioning of the digestive system and increases nutrient absorption."
+      ],
+      "area-of-influence": ["Minerals", "Essential Amino Acids"]
+    },
+    "wind-dose-c": {
+      "name": "Wind-Dose-C",
+      "purpose-of-use": [
+        "Maintenance of Electrolyte and Acid-Base Balance: This premix regulates fluid and electrolyte balance in the body, increases energy levels, and improves animal health by balancing their general metabolism.",
+        "Digestive Health: Lactose monohydrate and Ent. Faceium improve gut health and facilitate digestion.",
+        "High Performance and Endurance: It is ideal for animals that exhibit high performance even under stress by increasing energy production.",
+        "General Metabolism Support: Components like glycine and glutamic acid accelerate all metabolic processes in the body, improving the animal's overall health."
+      ],
+      "area-of-influence": [
+        "Electrolyte Balancers",
+        "Metabolic Supporters",
+        "Other Components"
+      ]
+    },
+    "win-calf": {
+      "name": "Win-Calf",
+      "purpose-of-use": [
+        "Support for the Transition to Feed: Strengthens the digestive system and accelerates the adaptation process by ensuring the effective absorption of nutrients during the transition of calves and lambs to feed.",
+        "Immune Strengthening: The vitamins and minerals it contains support the immune system of young animals, helping to increase their resistance to diseases.",
+        "Growth and Performance Increase: Nutritional components such as organic methionine and lysine increase the growth rate and support muscle development.",
+        "Digestive Health: Prebiotics and yeast components ensure a healthy microbiota balance in the digestive system and improve nutrient absorption.",
+        "Bone and Skeletal Health: Calcareous marine algae and calcium supplements promote bone development and help form strong skeletal structures in ruminants."
+      ],
+      "area-of-influence": [
+        "Vitamins and Minerals",
+        "Amino Acid and Metabolism Support",
+        "Mineral and Prebiotic Supporters",
+        "Aromatic Components"
+      ]
+    },
+    "besi-premium": {
+      "name": "Besi-Premium",
+      "purpose-of-use": [
+        "Rapid Growth and Development: The high concentration of vitamins and minerals supports the rapid and healthy growth of feedlot ruminants.",
+        "Immune System Support: High-quality selenium, zinc, and other vitamins strengthen immune functions and provide resistance to diseases.",
+        "Digestive Health: Inactive yeast and bentonite gibi components help the digestive system function healthily and maintain the balance of the microflora.",
+        "Bone and Skeletal Health: Vitamin D3, calcium, and phosphorus components help form a strong bone structure.",
+        "Cellular Regeneration and Antioxidant Protection: Antioxidant components like alpha-tocopherol (Vitamin E) and selenium prevent cellular damage and slow down aging."
+      ],
+      "area-of-influence": ["Vitamins", "Minerals", "Supportive Components"]
+    },
+    "adomega": {
+      "name": "Adomega",
+      "purpose-of-use": [
+        "ADOMEGA is a liquid support product where vitamins A, D3, and E, which play critical roles in the immune system, epithelial tissues, reproductive health, and nervous balance in ruminants (calves, lambs, kids, cows, sheep, goats), are synergistically combined with anti-inflammatory Omega-3 fatty acids.",
+        "Vitamin A protects the mucosal barrier integrity, Vitamin D3 regulates calcium-phosphorus metabolism, while Vitamin E provides antioxidant protection at a cellular level. Omega-3 fatty acids, in turn, suppress inflammation, supporting the healthy functioning of the vascular, nervous, and reproductive systems."
+      ],
+      "area-of-influence": [
+        "Strengthens the immune system",
+        "Supports musculoskeletal and bone development",
+        "Increases reproductive efficiency and conception rates",
+        "Improves epithelial integrity and skin-coat quality",
+        "Provides physiological resistance against heat and production stress",
+        "Supports nervous transmission and brain functions"
+      ]
+    },
+    "selemax": {
+      "name": "Selemax",
+      "purpose-of-use": [
+        "SELEMAX is a powerful antioxidant formula containing Vitamin E, selenium, and zinc. It is used in ruminants (calves, lambs, kids, cows, sheep, and goats) to strengthen immune functions, protect muscle health, maintain epithelial integrity, and increase reproductive efficiency.",
+        "Vitamin E protects cell membranes against free radicals, while sodium selenite, as a cofactor of the glutathione peroxidase enzyme, reduces cellular oxidative stress. Zinc, in turn, plays a role in many enzyme systems, affecting wound healing, skin health, and immune activity."
+      ],
+      "area-of-influence": [
+        "Strengthens cellular antioxidant defense",
+        "Protects muscle tissue and nervous transmission",
+        "Increases sperm and egg quality in the reproductive system",
+        "Improves skin-coat health, reduces hair loss",
+        "Increases immune response against infections",
+        "Reduces the risk of developmental delay, revitalizes"
+      ]
+    },
+    "vitabolic": {
+      "name": "Vitabolic",
+      "purpose-of-use": [
+        "VITABOLIC is a high-density B vitamin combination that regulates energy metabolism, strengthens immunity, and supports the nervous system in high-yielding milk and meat ruminants, starting from calves, lambs, and kids. It is particularly used to maintain metabolic balance and increase performance during growth, transition, stress, and disease periods."
+      ],
+      "area-of-influence": [
+        "Accelerates energy metabolism",
+        "Supports growth and development",
+        "Protects the nervous system and muscle coordination",
+        "Increases appetite and feed utilization",
+        "Accelerates recovery after stress and disease",
+        "Strengthens immunity and general endurance"
+      ]
+    },
+    "winmast": {
+      "name": "Winmast",
+      "purpose-of-use": [
+        "Improves udder health",
+        "Provides skin care",
+        "Reduces irritations and wounds",
+        "Prevents infections",
+        "Ensures the healthy functioning of teats. In lactating animals, regular use contributes to protecting teats and preventing issues that could negatively affect milk production."
+      ],
+      "area-of-influence": [
+        "St. John's Wort Oil (Hypericum oil)",
+        "Calendula Oil",
+        "Glycerol",
+        "Colloidal Silver Water"
+      ]
+    },
+    "scaroff": {
+      "name": "Scaroff",
+      "purpose-of-use": [
+        "Scaroff wound care spray is formulated with natural botanical extracts and homeopathic components. Its ingredients, Calendula Oil and Hypericum Oil (St. John's Wort Oil), are natural compounds with soothing and healing properties that improve skin health. Scaroff supports the rapid healing of wounds, accelerates skin regeneration, and reduces the risk of infection."
+      ],
+      "area-of-influence": [
+        "Calendula Oil",
+        "Hypericum Oil (St. John's Wort Oil)",
+        "Homeopathic Components"
+      ]
+    },
+    "eyewin": {
+      "name": "Eyewin",
+      "purpose-of-use": [
+        "Eyewin eye care spray is developed with a formula that supports and soothes eye health. The boric acid in its content reduces the risk of infections around the eyes with its antiseptic properties, while also helping to soothe irritations and protect eye health. Regular use reduces issues like dryness, redness, and the feeling of foreign objects in the eyes, cleaning and refreshing them."
+      ],
+      "area-of-influence": ["Boric Acid"]
+    },
+    "winatox": {
+      "name": "Winatox",
+      "purpose-of-use": [
+        "Winatox animal pest and parasite repellent powder, with its natural and effective formula, protects pets and livestock from harmful parasites. Diatomaceous earth is a natural component composed of microscopic silica layers that effectively kill pests and skin parasites. This powder eliminates fleas, lice, ticks, and other parasites that threaten animal health, while also protecting the animals' skin health."
+      ],
+      "area-of-influence": ["Diatomaceous Earth", "Skin-Protective Properties"]
+    }
+  },
+
+  "blogs": {
+    "all-blog": "All Blog Posts",
+    "last-blog": "Last Blogs",
+    "read-more": "Read More"
+  },
+  "contact": {
+    "contact-text": "Contact",
+    "contact-us": "Contact Us"
+  },
+  "footer": {
+    "address": "Address",
+    "telephone": "Telephone",
+    "mail": "E-mail",
+    "menu": "MENU",
+    "why-us": "WHY US?",
+    "why-us-text": "We prioritize animal health with our innovative and reliable solutions, making a difference with our experience in the industry.",
+    "follow-us": "FOLLOW US"
+  },
+  "number": {
+    "number-nutriwin": "Nutriwin in Numbers",
+    "number-year": "Years of Experience",
+    "number-happy": "Happy Livestock Owners",
+    "number-product": "Innovative Product",
+    "number-country": "Country"
+  }
+}

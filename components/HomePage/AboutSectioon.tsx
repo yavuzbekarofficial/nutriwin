@@ -2,8 +2,11 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Slide } from "react-awesome-reveal";
+import { useTranslation } from "@/hooks/useTranslation";
 
 function AboutSection() {
+  const { t } = useTranslation();
+
   return (
     <div>
       <div className="flex flex-col md:flex-row gap-12 items-center">
@@ -25,37 +28,16 @@ function AboutSection() {
           <Slide direction="right" triggerOnce>
             <div>
               <div className="font-bold text-4xl text-red-500">
-                Nutriwine Hoş Geldiniz
+                {t("about.about-welcome")}
               </div>
 
               {/* Başlığın altına eklenen kırmızı çizgi */}
               <div className="border-b-2 border-red-500 w-48"></div>
 
               <div className="text-gray-700 leading-relaxed">
-                <p className="mb-4">
-                  2019 yılında kurulan Nutriwin, hayvan sağlığını en üst
-                  seviyeye taşımak amacıyla homeopati ve beslenme destek
-                  ürünleri geliştiren yenilikçi bir markadır. Türkiye’deki
-                  homeopatik ürünlerde endüstriyel anlamda üretim yapabilen tek
-                  firmayız. Bilimsel araştırmalara dayalı formüllerimizle, evcil
-                  hayvanlardan çiftlik hayvanlarına kadar geniş bir yelpazede
-                  sağlıklı ve dengeli çözümler sunuyoruz.
-                </p>
-                <p className="mb-4">
-                  Homeopatlarımız ve veteriner hekimlerimizle hayvanların yaşam
-                  kalitesini artıran, bağışıklık sistemlerini güçlendiren ve
-                  gelişimlerini destekleyen ürünler üretiyoruz. Doğru beslenme
-                  ve etkili destek ilkesiyle hareket eden Nutriwin, kalite ve
-                  güvenirliği ön planda tutarak en iyi bileşenleri
-                  kullanmaktadır.
-                </p>
-                <p className="mb-4">
-                  Sürekli gelişen Ar-Ge çalışmalarımızla, doğa dostu ve etik
-                  üretim anlayışını benimseyerek, hayvan dostlarımızın sağlıklı
-                  ve mutlu bir yaşam sürmelerine katkı sağlıyoruz. Nutriwin
-                  olarak, hayvan sağlığında güvenilir bir çözüm ortağı olmaktan
-                  gurur duyuyoruz.
-                </p>
+                <p className="mb-4">{t("about.about-paragraph1")}</p>
+                <p className="mb-4">{t("about.about-paragraph2")}</p>
+                <p className="mb-4">{t("about.about-paragraph3")}</p>
               </div>
 
               <div className="mt-5">
@@ -63,7 +45,7 @@ function AboutSection() {
                   href="/hakkimizda"
                   className="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition "
                 >
-                  Daha Fazla
+                  {t("about.about-more")}
                 </Link>
               </div>
             </div>
