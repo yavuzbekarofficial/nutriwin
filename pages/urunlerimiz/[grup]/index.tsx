@@ -1,15 +1,15 @@
 // pages/urunlerimiz/[grup]/index.tsx
-
+import React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import ProductSidebar from "../../../components/ProductPage/ProductSidebar";
-import ProductList from "../../../components/ProductPage/ProductList";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
+import ProductSidebar from "@/components/ProductPage/ProductSidebar";
+import ProductList from "@/components/ProductPage/ProductList";
 import { urunler } from "@/data/productLists";
-import Link from "next/link";
-import useIsMobile from "@/hooks/useIsMobile"; // Hook'u import et
+import useIsMobile from "@/hooks/useIsMobile";
 
 const GrupSayfasi: React.FC = () => {
   const router = useRouter();
@@ -17,28 +17,57 @@ const GrupSayfasi: React.FC = () => {
   const grupAdi =
     (grup as string)?.charAt(0).toUpperCase() + (grup as string)?.slice(1);
 
-  // urunler dizisini gelen grup değerine göre filtreliyoruz
+  // Gelen grup adına göre ürünleri filtrele
   const grupUrunleri = urunler.filter((urun) => urun.group === grup);
 
-  // useIsMobile hook'unu kullan
   const isMobile = useIsMobile();
 
   return (
-    <div>
+    <>
+      {/* SEO */}
       <Head>
         <title>{grupAdi} Ürünleri | İlaç Firması</title>
+        <meta
+          name="description"
+          content={`${grupAdi} grubuna ait ürünleri keşfedin ve detaylı bilgi alın.`}
+        />
+        <meta
+          name="keywords"
+          content={`${grupAdi}, ürünler, ilaç, sağlık, ürün listesi`}
+        />
+        <meta
+          property="og:title"
+          content={`${grupAdi} Ürünleri | İlaç Firması`}
+        />
+        <meta
+          property="og:description"
+          content={`${grupAdi} grubuna ait ürünleri keşfedin ve detaylı bilgi alın.`}
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content={`https://www.siteadi.com/urunlerimiz/${grup}`}
+        />
+        <meta
+          property="og:image"
+          content="https://www.siteadi.com/images/urunler-banner.jpg"
+        />
+        <link
+          rel="canonical"
+          href={`https://www.siteadi.com/urunlerimiz/${grup}`}
+        />
       </Head>
 
       <Navbar />
 
-      {/* Slider tam genişlikte kalacak */}
+      {/* Banner */}
       <div className="mt-[80px]">
-        <PageBanner title="Ürünlerimiz"></PageBanner>
+        <PageBanner title="Ürünlerimiz" />
       </div>
 
-      {/* Ortalanmış içerikler */}
+      {/* İçerik */}
       <div className="max-w-6xl mx-auto px-4 sm:px-12 py-10 flex flex-col gap-10">
-        {/* Geri Dön butonu */}
+        {/* Geri Dön Butonu */}
         <div className="mb-6">
           <Link
             href="/urunlerimiz"
@@ -73,8 +102,10 @@ const GrupSayfasi: React.FC = () => {
           </div>
         ) : (
           // Masaüstü Görünüm
-          <div className="flex flex-1">
-            <ProductSidebar />
+          <div className="flex flex-1 gap-8">
+            <div className="w-80">
+              <ProductSidebar />
+            </div>
             <div className="flex-1 px-8">
               <h1 className="text-4xl font-bold text-gray-900 mb-6">
                 {grupAdi} Grubu Ürünleri
@@ -86,7 +117,7 @@ const GrupSayfasi: React.FC = () => {
       </div>
 
       <Footer />
-    </div>
+    </>
   );
 };
 

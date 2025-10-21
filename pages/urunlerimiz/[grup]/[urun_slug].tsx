@@ -5,7 +5,6 @@ import { useRouter } from "next/router";
 import Navbar from "@/components/Navbar";
 import PageBanner from "@/components/PageBanner";
 import Footer from "@/components/Footer";
-// İki dilli veri dosyalarını da import ediyoruz
 import { urunler } from "@/data/productLists"; // Türkçe veriler
 import { products } from "@/data/productLists_en"; // İngilizce veriler
 import Image from "next/image";
@@ -17,29 +16,63 @@ const UrunDetay: React.FC = () => {
   const { urun_slug } = router.query;
   const { t, locale } = useTranslation();
 
-  // locale değişkenine göre doğru veri dosyasını seçiyoruz
   const currentProducts = locale === "tr" ? urunler : products;
-
-  // Seçilen veri dosyasında ürünü buluyoruz
   const urun = currentProducts.find((u) => u.slug === urun_slug);
 
   if (!urun) {
-    // Ürün bulunamadı mesajını çeviri fonksiyonu ile gösteriyoruz
     return <div>{t("product_not_found")}</div>;
   }
 
   return (
     <div>
+      {/* SEO Başlık ve Meta */}
       <Head>
         <title>
-          {urun.name} {t("product_details_title")} | {t("company_name")}
+          {urun.name} {t("products.product-details")} | Nutriwin Kimya
         </title>
+        <meta
+          name="description"
+          content={
+            urun.description
+              ? urun.description
+              : `Detaylı bilgi ve kullanım amacı ile ${urun.name} ürününü keşfedin.`
+          }
+        />
+        <meta
+          name="keywords"
+          content={`Nutriwin, ${urun.name}, ${urun.group}, kullanım amacı, ambalaj`}
+        />
+        <meta
+          property="og:title"
+          content={`${urun.name} | ${t("company_name")}`}
+        />
+        <meta
+          property="og:description"
+          content={
+            urun.description
+              ? urun.description
+              : `Detaylı bilgi ve kullanım amacı ile ${urun.name} ürününü keşfedin.`
+          }
+        />
+        <meta property="og:type" content="product" />
+        <meta
+          property="og:url"
+          content={`https://www.nutriwin.com.tr/urunlerimiz/${urun.group}/${urun.slug}`}
+        />
+        <meta
+          property="og:image"
+          content={`https://www.nutriwin.com.tr${urun.image}`}
+        />
+        <link
+          rel="canonical"
+          href={`https://www.nutriwin.com.tr/urunlerimiz/${urun.group}/${urun.slug}`}
+        />
       </Head>
 
       <Navbar />
 
       <div className="mt-[80px]">
-        <PageBanner title={t("products.our-product")}></PageBanner>
+        <PageBanner title={t("products.our-product")} />
       </div>
 
       <div className="max-w-6xl mx-auto px-12 py-10">

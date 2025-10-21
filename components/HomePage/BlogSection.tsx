@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { blogs } from "@/data/blogs";
-import { Fade } from "react-awesome-reveal"; // Fade bileşeni eklendi
+import { Fade } from "react-awesome-reveal";
 import useIsMobile from "@/hooks/useIsMobile";
 import { useTranslation } from "@/hooks/useTranslation";
 
 function BlogSection() {
   const [currentPage, setCurrentPage] = useState(1);
-  const postsPerPage = 3; // Sayfada gösterilecek blog sayısı 3'e düşürüldü
+  const postsPerPage = 3;
 
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
@@ -16,15 +16,17 @@ function BlogSection() {
 
   const totalPages = Math.ceil(blogs.length / postsPerPage);
 
-  const paginate = (pageNumber: number) => {
-    setCurrentPage(pageNumber);
-  };
+  const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
   const isMobile = useIsMobile();
 
   const { t } = useTranslation();
 
   return (
-    <section className="py-12">
+    <section
+      id="blog-section"
+      aria-labelledby="blog-section-title"
+      className="py-12"
+    >
       <div className="container mx-auto">
         <div
           className={`flex justify-between items-end mb-12 ${
@@ -32,15 +34,18 @@ function BlogSection() {
           }`}
         >
           <div className="relative">
-            <h2 className="font-bold text-4xl text-red-500">
+            <h2
+              id="blog-section-title"
+              className="font-bold text-4xl text-red-500"
+            >
               {t("blogs.last-blog")}
             </h2>
-            {/* Kırmızı çizgi */}
             <div className="border-b-2 border-red-500 w-24 mt-2"></div>
           </div>
-          {/* Tüm blogları gör butonu */}
+
           <Link
             href="/blog"
+            aria-label="Tüm blog yazılarını gör"
             className="bg-gray-800 text-white font-semibold px-6 py-2 rounded-full hover:bg-gray-900 transition-colors duration-300"
           >
             {t("blogs.all-blog")}
@@ -49,15 +54,15 @@ function BlogSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {currentPosts.map((post) => (
-            // Her bir blog kartını Fade animasyonu ile sarmalıyoruz
             <Fade key={post.slug} triggerOnce>
               <div className="bg-white rounded-lg overflow-hidden shadow-lg flex flex-col">
                 <div className="relative w-full h-48">
                   <Image
                     src={post.image}
-                    alt={post.title}
+                    alt={`Nutriwin Blog: ${post.title}`}
                     layout="fill"
                     objectFit="cover"
+                    priority
                   />
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
@@ -69,6 +74,7 @@ function BlogSection() {
                   </p>
                   <Link
                     href={`/blog/${post.slug}`}
+                    aria-label={`Blog yazısını oku: ${post.title}`}
                     className="inline-block mt-auto bg-red-600 text-white font-semibold px-6 py-2 rounded-full hover:bg-red-700 transition-colors duration-300 self-start text-center"
                   >
                     {t("blogs.read-more")}
@@ -79,9 +85,11 @@ function BlogSection() {
           ))}
         </div>
 
-        {/* Pagination Bölümü */}
         {totalPages > 0 && (
-          <nav className="flex justify-center mt-8">
+          <nav
+            className="flex justify-center mt-8"
+            aria-label="Blog sayfalandırma"
+          >
             <ul className="flex items-center space-x-2">
               {[...Array(totalPages)].map((_, index) => (
                 <li key={index}>
