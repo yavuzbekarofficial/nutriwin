@@ -5,7 +5,8 @@
     "products": "Ürünlerimiz",
     "blog": "Blog",
     "contact": "İletişim",
-    "contact-now": "İLETİŞİME GEÇ"
+    "contact-now": "İLETİŞİME GEÇ",
+    "explore-products": "Ürünleri Keşfet"
   },
   "about": {
     "about": "Hakkımızda",
@@ -437,6 +438,7 @@
   },
   "footer": {
     "address": "Adres",
+    "address-text": "Fevziçakmak, 10514. Sk. No:47, 42100 Karatay/Konya",
     "telephone": "Telefon",
     "mail": "E-mail",
     "menu": "MENÜ",

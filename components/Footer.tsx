@@ -49,7 +49,7 @@ const Footer = () => {
           </Link>
           <div className="mb-2">
             <span className="font-bold">{t("footer.address")}:</span>{" "}
-            {t("footer.address_text")}
+            {t("footer.address-text")}
           </div>
           <div className="mb-2">
             <span className="font-bold">{t("footer.telephone")}:</span>{" "}
