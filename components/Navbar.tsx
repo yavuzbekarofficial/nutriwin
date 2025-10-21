@@ -15,6 +15,9 @@ function Navbar() {
   // useTranslation hook'undan hem t'yi hem de yeni changeLanguage fonksiyonunu al
   const { t, locale, changeLanguage } = useTranslation();
 
+  // Sabit Navbar yüksekliğini tanımlıyoruz (80px)
+  const NAV_HEIGHT = "80px";
+
   const handleLanguageChange = () => {
     changeLanguage(locale === "tr" ? "en" : "tr");
   };
@@ -49,6 +52,7 @@ function Navbar() {
   };
 
   return (
+    // Navbar sabit (fixed) ve en önde (z-50)
     <div className="fixed top-0 left-0 w-full z-50 shadow">
       {isMobile ? (
         // Mobil Navbar
@@ -93,10 +97,17 @@ function Navbar() {
             </button>
           </div>
 
+          {/* DÜZELTME: Mobil Menü Konumlandırması ve Yüksekliği */}
           <div
-            className={`fixed top-[60px] left-0 h-full w-full bg-white transition-transform duration-300 ease-in-out transform ${
+            // top-[80px] ile navbar'ın hemen altından başlatıldı.
+            // h-full yerine, tam ekran yüksekliğinden navbar yüksekliği çıkarılarak
+            // menü yüksekliği hesaplandı (h-[calc(100dvh-80px)]).
+            // 100dvh, mobil tarayıcıların kendi çubuklarından etkilenmemesi için daha iyidir.
+            style={{ top: NAV_HEIGHT, height: `calc(100dvh - ${NAV_HEIGHT})` }}
+            className={`fixed left-0 w-full bg-white transition-transform duration-300 ease-in-out transform overflow-y-auto ${
+              // overflow-y-auto eklendi
               isMenuOpen ? "translate-x-0" : "-translate-x-full"
-            } flex flex-col items-center pt-8 gap-6 `}
+            } flex flex-col items-center pt-8 gap-6 z-40`} // z-index 40 yapıldı (navbar 50)
           >
             {navLinks.map((navLink) => (
               <Link
