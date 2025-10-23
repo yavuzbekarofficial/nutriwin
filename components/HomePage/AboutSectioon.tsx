@@ -1,3 +1,4 @@
+// components/AboutSection.tsx
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -11,7 +12,11 @@ function AboutSection() {
     <section
       id="about-section"
       aria-labelledby="about-section-title"
-      className="my-16"
+      // DEĞİŞİKLİK BURADA: overflow-x-hidden eklendi.
+      // translate="no" ve data-testid="notranslate" ile çeviri sorunları adreslendi.
+      className="my-16 overflow-x-hidden"
+      translate="no"
+      data-testid="notranslate"
     >
       <div className="flex flex-col md:flex-row gap-12 items-center">
         {/* Sol tarafta resim (soldan animasyonlu) */}

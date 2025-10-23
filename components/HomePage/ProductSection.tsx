@@ -1,3 +1,4 @@
+// components/ProductSection.tsx
 import React from "react";
 import Link from "next/link";
 import { productGroupLists } from "@/data/productGroupLists";
@@ -11,7 +12,15 @@ function ProductSection() {
   const currentLocale = locale === "en" ? "en" : "tr";
 
   return (
-    <section id="product-section" aria-labelledby="product-section-title">
+    <section
+      id="product-section"
+      aria-labelledby="product-section-title"
+      // DEĞİŞİKLİK BURADA: overflow-x-hidden eklendi.
+      // translate="no" ve data-testid="notranslate" ile çeviri sorunları adreslendi.
+      className="overflow-x-hidden"
+      translate="no"
+      data-testid="notranslate"
+    >
       <div className="flex flex-col items-center mb-8">
         <div>
           <h2

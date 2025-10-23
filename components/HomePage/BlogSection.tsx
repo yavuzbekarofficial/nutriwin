@@ -1,3 +1,4 @@
+// components/BlogSection.tsx
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -25,7 +26,11 @@ function BlogSection() {
     <section
       id="blog-section"
       aria-labelledby="blog-section-title"
-      className="py-12"
+      // DEĞİŞİKLİK BURADA: overflow-x-hidden eklendi.
+      // translate="no" ve data-testid="notranslate" ile çeviri sorunları adreslendi.
+      className="py-12 overflow-x-hidden"
+      translate="no"
+      data-testid="notranslate"
     >
       <div className="container mx-auto">
         <div
