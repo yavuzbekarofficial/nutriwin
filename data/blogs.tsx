@@ -19,7 +19,7 @@ export const blogs: Blog[] = [
     title:
       "Büyükbaş Hayvanlarda Şap Hastalığında Güçlü İyileşme ve Bağışıklık Desteği",
     image: "/images/negrofix-blog.jpg",
-    date: "14.07.2024",
+    date: "23.10.2025",
     content: [
       {
         type: "paragraph",
