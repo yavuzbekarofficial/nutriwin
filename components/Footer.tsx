@@ -32,6 +32,9 @@ const Footer = () => {
     },
   ];
 
+  // Güncel yılı alıyoruz
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="bg-gray-800 text-white p-10 px-20">
       <div className="flex flex-col md:flex-row justify-between h-auto md:h-[250px]">
@@ -127,6 +130,35 @@ const Footer = () => {
               </Link>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Telif Hakkı ve Powered by Bölümü */}
+      <div className="mt-10 pt-5 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center text-sm">
+        {/* Telif Hakkı (Sola Dayalı) */}
+        <div className="mb-4 md:mb-0 text-center md:text-left">
+          &copy; {currentYear} Nutriwin.{" "}
+          {t("footer.copyright-text") || "Tüm hakları saklıdır."}
+        </div>
+
+        {/* Powered by Beq Creative (Sağa Dayalı) */}
+        <div>
+          <Link
+            href="https://www.beqcreative.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block"
+          >
+            <div className="flex items-center justify-center md:justify-end">
+              <span className="mr-2">Powered by</span>
+              <Image
+                width={100} // İhtiyaca göre ayarlanabilir
+                height={30} // İhtiyaca göre ayarlanabilir
+                src="/images/beq.png"
+                alt="Beq Creative Logo"
+              />
+            </div>
+          </Link>
         </div>
       </div>
     </div>

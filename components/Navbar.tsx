@@ -131,7 +131,7 @@ function Navbar() {
               className="flex items-center mt-4 bg-[#25D366] p-3 px-6 rounded-full gap-3 text-white font-medium hover:opacity-80 transition-opacity"
             >
               <Icon icon="streamline-plump:phone"></Icon>
-              <span className="uppercase">{t("navbar.contactNow")}</span>
+              <span className="uppercase">{t("navbar.contact-now")}</span>
             </Link>
           </div>
         </div>
