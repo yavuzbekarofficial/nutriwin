@@ -1,15 +1,22 @@
+// components/About.tsx
 "use client";
 import React from "react";
 import Image from "next/image";
 import NumbersSection from "../NumbersSection";
-import { Slide, Fade } from "react-awesome-reveal"; // Animasyon bileşenleri eklendi
+import { Slide, Fade } from "react-awesome-reveal";
 import { useTranslation } from "@/hooks/useTranslation";
 
 function About() {
   const { t } = useTranslation();
 
   return (
-    <div className="container mx-auto px-4 py-16">
+    // DEĞİŞİKLİK BURADA: overflow-x-hidden eklendi.
+    // Ayrıca, translate="no" ve notranslate eklenerek tarayıcı çeviri sorunları da adreslendi.
+    <div
+      className="container mx-auto px-4 py-16 overflow-x-hidden"
+      translate="no"
+      data-testid="notranslate" // notranslate class'ı yerine data-testid (veya translate="no") kullanmak modern React/Next.js'te daha temizdir.
+    >
       {/* Üst Kısım: Resim ve Hakkımızda Metni */}
       <div className="flex flex-col lg:flex-row gap-12 items-center lg:items-start mb-16">
         {/* Sol tarafta resim (soldan animasyonlu) */}
