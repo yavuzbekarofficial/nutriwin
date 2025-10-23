@@ -129,7 +129,7 @@ function About() {
       </div>
 
       {/* Ayrı bir bileşen olarak çağrılan Sayılarla Biz bölümü */}
-      <NumbersSection />
+      {/* <NumbersSection /> */}
     </div>
   );
 }

@@ -81,7 +81,7 @@ function HomePage() {
         <AboutSectioon />
         <ProductSection />
         <BlogSection />
-        <NumbersSection />
+        {/* <NumbersSection /> */}
         <Maps />
       </div>
 
