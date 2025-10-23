@@ -16,67 +16,78 @@ export interface Blog {
 export const blogs: Blog[] = [
   {
     slug: "buyukbas-hayvanlarda-sap-hastaligi",
-    title: "Büyükbaş Hayvanlarda Şap Hastalığı ve Korunma Yolları",
-    image: "/images/about.jpg",
+    title:
+      "Büyükbaş Hayvanlarda Şap Hastalığında Güçlü İyileşme ve Bağışıklık Desteği",
+    image: "/images/negrofix-blog.jpg",
     date: "14.07.2024",
     content: [
       {
         type: "paragraph",
-        text: "Şap hastalığı, özellikle büyükbaş hayvanlar arasında oldukça hızlı bir şekilde yayılan ve son derece bulaşıcı bir viral hastalıktır. Bu hastalık, sığır, manda, keçi ve koyun gibi çiftlik hayvanlarında ciddi verim kaybına yol açar. Hastalık nedeniyle süt verimi azalır, kilo kaybı yaşanır ve hayvanın genel sağlığı zayıflar. Ayrıca şap hastalığı, ülke ekonomisi açısından da büyük kayıplara yol açabilen bir hastalık olduğundan çiftçilerin en çok çekindiği sağlık problemlerinden biridir.",
+        text: "Şap hastalığı, büyükbaş hayvancılıkta en çok korkulan viral enfeksiyonlardan biridir. Hızla yayılan bu hastalık, yüksek ateş ve ağız ile tırnak aralarında oluşan veziküllerle (kabarcıklar) karakterizedir. Hastalık nedeniyle süt verimi, kilo ve genel sağlık hızla düşer. Şap hastalığının kesin bir tedavisi olmamakla birlikte, asıl mücadele korunma (aşılama) ve hastalık sonrası ikincil enfeksiyonları önleyerek iyileşme sürecini desteklemeye odaklanır. Bu süreçte, hayvanın bağışıklık sistemini güçlendirmek ve hasarlı dokuların onarımını hızlandırmak kritik önem taşır.",
       },
-      { type: "heading", text: "Hastalığın Belirtileri" },
+      {
+        type: "heading",
+        text: "Destekleyici Tedavinin Önemi: Bağışıklık ve Onarım",
+      },
       {
         type: "paragraph",
-        text: "Şap hastalığının ilk belirtileri genellikle ateş, iştahsızlık, halsizlik ve salya akıntısıdır. Hastalık ilerledikçe dil, diş etleri, dudak içi, burun delikleri ve tırnak aralarında içi sıvı dolu kabarcıklar (veziküller) oluşur. Bu kabarcıklar patladığında yerlerinde açık yaralar meydana gelir. Yaralar, hayvanın beslenmesini zorlaştırır ve topallamasına neden olur. Bazı durumlarda genç buzağılarda ani ölümler de görülebilir.",
+        text: "Şap yaraları patladığında, açık kalan alanlar ikincil bakteriyel enfeksiyonlara ve apse oluşumuna davetiye çıkarır. Verdiğimiz formülasyon, hayvanın bağışıklık sistemini güçlendirerek ağır bakteriyel enfeksiyonlara karşı etkin koruma sağlar. Ayrıca, nekrotik ve apseli dokuların drenajını destekleyerek iyileşme sürecini hızlandırır, böylece verim kaybını en aza indirir. Cilt ve mukozadaki iltihabi süreçleri dengeleyerek kronik enfeksiyon riskini azaltırken, yara iyileşmesini hızlandırarak sağlıklı doku oluşumunu teşvik eder. Bağışıklık sisteminin aşırı reaksiyonlarını düzenleyerek otoimmün eğilimleri bile dengeler.",
       },
-      { type: "heading", text: "Korunma ve Tedavi Yöntemleri" },
+      {
+        type: "heading",
+        text: "1. Doku Nekrozu ve Derin Enfeksiyonlar Üzerindeki Etki",
+      },
       {
         type: "paragraph",
-        text: "Şap hastalığının tedavisi için kesin bir ilaç bulunmamaktadır. Ancak semptomların hafifletilmesi ve ikincil enfeksiyonların önlenmesi amacıyla destekleyici tedaviler uygulanabilir. Bu noktada en önemli adım hastalıktan korunmaktır. Düzenli aşılamalar, çiftlikte hijyen kurallarına uyulması, hasta hayvanların diğerlerinden ayrılması ve yeni gelen hayvanların karantinada tutulması en etkili korunma yöntemleridir. Ayrıca yem ve su kaynaklarının temiz tutulması, hayvan barınaklarının sık sık dezenfekte edilmesi de hastalığın önlenmesine katkı sağlar.",
+        text: "Hedef hücreler: Makrofajlar, Nötrofiller, Fibroblastlar, Endotelyal Hücreler.",
       },
-    ],
-  },
-  {
-    slug: "koyunlarda-ic-parazitlere-karsi-mucadele",
-    title: "Koyunlarda İç Parazitlere Karşı Etkili Mücadele",
-    image: "/images/about.jpg",
-    date: "25.06.2024",
-    content: [
       {
         type: "paragraph",
-        text: "Koyunlarda iç parazitler, özellikle merada otlayan hayvanlarda sık karşılaşılan sağlık problemlerinden biridir. Parazitler, hayvanların sindirim sisteminde, akciğerlerinde veya karaciğerlerinde yaşayabilir ve koyunun besinlerden yeterince yararlanmasını engeller. Bunun sonucunda hayvanlarda kilo kaybı, gelişme geriliği, yapağı kalitesinde bozulma ve hatta ölümler meydana gelebilir. Bu durum, sürünün verimini ciddi şekilde azaltır ve yetiştirici için ekonomik kayıplara yol açar.",
+        text: "Doku nekrozu ve derin enfeksiyonların tedavisinde bağışıklık hücrelerini aktive ederek nekrotik dokuların vücuttan daha hızlı bir şekilde uzaklaştırılmasını sağlar. Kan dolaşımını arttırarak, enfekte bölgelere oksijen ve bağışıklık hücrelerinin ulaşımını hızlandırır. İltihaplı dokuların drenajını destekleyerek biriken toksinlerin temizlenmesini kolaylaştırır. Deri altı ve yumuşak doku enfeksiyonlarında bağışıklık sisteminin aşırı tepkisini düzenler ve enfeksiyonun yayılmasını engeller.",
       },
-      { type: "heading", text: "Parazit Türleri ve Etkileri" },
+      {
+        type: "heading",
+        text: "2. Bakteriyel Enfeksiyonlara Karşı Bağışıklık Yanıtının Güçlendirilmesi",
+      },
       {
         type: "paragraph",
-        text: "En yaygın iç parazitler arasında şerit solucanları (Cestodlar), yuvarlak solucanlar (Nematodlar) ve karaciğer kelebekleri (Trematodlar) bulunur. Bu parazitler, hayvanın sindirim sistemine yerleşerek besinleri tüketir ve koyunun bağışıklığını zayıflatır. Sonuç olarak hayvanlarda kansızlık, ishal, halsizlik ve iştahsızlık gibi sorunlar ortaya çıkar. Ayrıca akciğer parazitleri öksürük ve solunum güçlüğüne neden olurken, karaciğer parazitleri karaciğer fonksiyonlarını bozarak hayvanın genel metabolizmasını etkiler.",
+        text: "Hedef hücreler: Nötrofiller, T Lenfositler, Makrofajlar.",
       },
-      { type: "heading", text: "Mücadele Yöntemleri" },
       {
         type: "paragraph",
-        text: "Koyunlarda iç parazitlerle mücadelede en etkili yöntem düzenli olarak antiparaziter ilaçların kullanılmasıdır. Bununla birlikte, sadece ilaç uygulamak yeterli değildir. Meraların dinlendirilmesi, kalabalık otlatmadan kaçınılması, temiz su kaynaklarının sağlanması ve yemlerin hijyenik koşullarda verilmesi de oldukça önemlidir. Ayrıca yeni alınan hayvanların sürüye katılmadan önce kontrol edilmesi ve gerekiyorsa parazit tedavisi uygulanması gerekir. Bu önlemler sayesinde sürüde parazit kaynaklı kayıplar en aza indirilebilir.",
+        text: "Bağışıklık sistemini spesifik olarak bakteriyel enfeksiyonlara karşı güçlendirir. T lenfosit aktivitesini arttırarak, enfekte olmuş hücrelerin daha hızlı bir şekilde ortadan kaldırılmasını sağlar. Makrofajların patojenleri daha etkili bir şekilde fagosite etmesini destekler. Antimikrobiyal peptid üretimini arttırarak bakterilerin çoğalma hızını yavaşlatır ve enfeksiyonların kontrol altına alınmasına katkı sağlar.",
       },
-    ],
-  },
-  {
-    slug: "kanatli-hayvanlarda-solunum-yolu-hastaliklari",
-    title: "Kanatlı Hayvanlarda Solunum Yolu Hastalıkları",
-    image: "/images/about.jpg",
-    date: "10.05.2024",
-    content: [
+      {
+        type: "heading",
+        text: "3. Apse ve Patolojik İltihabı Düzenleyici Mekanizma",
+      },
       {
         type: "paragraph",
-        text: "Kanatlı hayvanlarda solunum yolu hastalıkları, kümes hayvancılığında en sık karşılaşılan sağlık sorunlarının başında gelir. Özellikle kapalı, kalabalık ve havalandırması yetersiz ortamlarda bu hastalıkların görülme oranı artar. Solunum yolu hastalıkları, tavuk, hindi, ördek ve kaz gibi birçok kanatlı hayvanda görülerek hem hayvanların sağlığını hem de üretim verimini olumsuz etkiler.",
+        text: "Hedef hücreler: Mast Hücreleri, İnflamatuar Sitokin Salgılayan Hücreler, Dermal Fibroblastlar.",
       },
-      { type: "heading", text: "Hastalığın Yayılması ve Belirtileri" },
       {
         type: "paragraph",
-        text: "Bu hastalıklar genellikle damlacık yoluyla veya kirli ekipman, yem ve su aracılığıyla yayılır. Hastalık belirtileri arasında öksürük, hapşırma, burun akıntısı, gözlerde sulanma, tüylerin kabarması, solunum güçlüğü ve yem tüketiminde azalma yer alır. İleri vakalarda hayvanların gelişimi durur, yumurta verimi düşer ve ölüm oranı artar. Özellikle genç civcivlerde bu hastalıklar daha ağır seyredebilir.",
+        text: "İltihaplı dokularda oluşan şişlik ve ağrıyı azaltarak ödemin oluşumunu engelleyerek ve enfeksiyon bölgesinin daha hızlı iyileşmesini sağlar. Kronik iltihap eğilimindeki dokuları destekleyerek tekrarlayan enfeksiyonların önlenmesine katkı sağlar. Hücre içi toksin yükünü azaltarak bağışıklık sisteminin üzerindeki yükü hafifletir ve vücudun genel savunma kapasitesini arttırır.",
       },
-      { type: "heading", text: "Korunma ve Kontrol Yöntemleri" },
+      {
+        type: "heading",
+        text: "4. Doku Onarımı ve Yenilenmeyi Hızlandırma",
+      },
       {
         type: "paragraph",
-        text: "Solunum yolu hastalıklarının önlenmesinde hijyen, düzenli bakım ve doğru kümes yönetimi büyük önem taşır. Kümeslerin iyi havalandırılması, yoğunluğun azaltılması, yem ve suyun temiz tutulması hastalıkların yayılmasını engeller. Ayrıca düzenli aşılama programlarının uygulanması ve hastalık belirtisi gösteren hayvanların erken dönemde ayrılarak tedavi edilmesi de kritik rol oynar. Veteriner hekim kontrolünde uygulanan antibiyotik ve destekleyici tedaviler, enfeksiyonun etkilerini hafifletmeye yardımcı olur.",
+        text: "Hedef hücreler: Keratinositler, Fibroblastlar, Dermal Kök Hücreler.",
+      },
+      {
+        type: "paragraph",
+        text: "Hasar görmüş dokuların hızlı bir şekilde yenilenmesini teşvik eder ve bağ dokusunun güçlenmesini sağlayarak yara izlerinin minimal kalmasına katkı sağlar. Cilt ve mukoza bariyerlerini onararak gelecekteki enfeksiyon riskini azaltır. Dokuların elastikiyetini koruyarak iyileşme sürecini hızlandırır ve fonksiyonel bütünlüğü yeniden kazandırır.",
+      },
+      {
+        type: "heading",
+        text: "Formülasyonun Etken Maddeleri",
+      },
+      {
+        type: "paragraph",
+        text: "Bu ileri düzey destekleyici formül; **Tarantula hispanica**, **Tarantula cubensis** ve **Hepar sulphur** gibi güçlü etken maddeler içerir. Bu bileşenler, özellikle nekrotik doku drenajını hızlandırma, bağışıklık reaksiyonlarını dengeleme ve derin doku iyileşmesini teşvik etme özellikleri ile bilinir.",
       },
     ],
   },
