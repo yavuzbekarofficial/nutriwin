@@ -423,5 +423,10 @@
     "number-happy": "Happy Livestock Owners",
     "number-product": "Innovative Product",
     "number-country": "Country"
+  },
+  "catalog": {
+    "catalog-title": "Browse Our Product Catalog",
+    "catalog-description": "Review our up-to-date catalog, which includes our entire product range, technical details, and high-resolution visuals.",
+    "catalog-button-text": "View / Download the Catalog"
   }
 }

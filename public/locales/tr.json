@@ -453,5 +453,10 @@
     "number-happy": "Mutlu Hayvan Dostu",
     "number-product": "Yenilikçi Ürün",
     "number-country": "Ülke"
+  },
+  "catalog": {
+    "catalog-title": "Ürün Kataloğumuzu İnceleyin",
+    "catalog-description": "Ürün yelpazemizin tamamını içeren, teknik detaylar ve yüksek çözünürlüklü görsellerle hazırlanmış güncel kataloğumuzu inceleyin.",
+    "catalog-button-text": "Kataloğu İncele/İndir"
   }
 }
