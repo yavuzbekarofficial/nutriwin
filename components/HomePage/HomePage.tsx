@@ -8,6 +8,7 @@ import BlogSection from "./BlogSection";
 import Footer from "../Footer";
 import NumbersSection from "../NumbersSection";
 import Maps from "../Maps";
+import CatalogSection from "../CatalogSection";
 
 function HomePage() {
   return (
@@ -80,6 +81,7 @@ function HomePage() {
       <div className="max-w-6xl mx-auto px-12 py-10 flex flex-col gap-10">
         <AboutSectioon />
         <ProductSection />
+        <CatalogSection />
         <BlogSection />
         {/* <NumbersSection /> */}
         <Maps />
