@@ -15,11 +15,73 @@ export interface Blog {
 
 export const blogs: Blog[] = [
   {
+    slug: "sap-hastaliginda-erken-teshisin-onemi",
+    title:
+      "Şap Hastalığında Erken Teşhisin Önemi ve Negrofix’in Tedavi Sürecindeki Rolü",
+    image: "/images/negrofix-blog2.jpg",
+    date: "05.11.2025",
+    content: [
+      {
+        type: "paragraph",
+        text: "Şap hastalığı, büyükbaş hayvancılıkta en çok korkulan viral enfeksiyonlardan biridir. Hızla yayılan bu hastalık, yüksek ateş, iştahsızlık ve özellikle ağız ile tırnak aralarında oluşan veziküller (kabarcıklar) ile karakterizedir. Şap hastalığına yakalanan hayvanlarda genel sağlık durumu zayıflar ve bağışıklık sistemi ciddi şekilde zarar görür. Hastalık viral kökenli olduğu için kesin bir ilaçla ortadan kaldırılamaz; bu nedenle erken teşhis, hastalığın kontrol altına alınmasında ve sürü sağlığının korunmasında en kritik aşamadır.",
+      },
+      {
+        type: "paragraph",
+        text: "Şap hastalığı, büyükbaş hayvancılıkta ciddi ekonomik kayıplara neden olan bir enfeksiyondur. Üreticilerin en çok merak ettiği konular “şap hastalığı nasıl geçer”, “şap hastalığında hangi ilaçlar kullanılır” ve “iyileşmeyi nasıl hızlandırabilirim” sorularıdır. Bu noktada Nutriwin tarafından geliştirilen Negrofix, veteriner hekimlerin ve yetiştiricilerin güvenle tercih ettiği güçlü bir homeopatik destekleyici tedavi ürünüdür. Negrofix, bağışıklık sistemini destekleyerek şap yaralarının iyileşmesini hızlandırır, ikincil bakteriyel enfeksiyonların kontrol altına alınmasına yardımcı olur ve şap hastalığı sonrası toparlanma sürecini belirgin şekilde kısaltır.",
+      },
+      {
+        type: "heading",
+        text: "Negrofix’in Şap Hastalığındaki Etkisi",
+      },
+      {
+        type: "paragraph",
+        text: "Nutriwin Negrofix, yalnızca semptomların hafiflemesini değil, aynı zamanda hasarlı dokuların yenilenmesini de destekler. Şap hastalığı geçiren hayvanlarda ağız içi yaralar, ayak tabanında kabarcıklar ve derin lezyonlar sıkça görülür. Bu durum hayvanın yem tüketiminde azalmaya ve genel zayıflamaya yol açar. Negrofix kullanımı, bu lezyonların hızla onarılmasını sağlayarak hayvanın yeniden beslenmeye başlamasına yardımcı olur. İçeriğindeki Tarantula hispanica ve Tarantula cubensis, nekrotik doku drenajını hızlandırır, toksinlerin vücuttan uzaklaştırılmasını kolaylaştırır ve sağlıklı doku oluşumunu teşvik eder. Böylece şap hastalığı ilacı Negrofix, yalnızca enfeksiyonun kontrol altına alınmasına değil, bağışıklık sisteminin doğal yollarla güçlenmesine de katkı sağlar.",
+      },
+      {
+        type: "heading",
+        text: "Bağışıklık Sisteminin Güçlendirilmesi",
+      },
+      {
+        type: "paragraph",
+        text: "Negrofix, şap hastalığına karşı en etkili homeopatik destekleyici çözümlerden biridir. Ürün, bağışıklık sistemini aktive ederek bakteriyel enfeksiyonların yayılmasını önler, iltihabi süreçleri dengeler ve apseli bölgelerde drenajı destekler. Bu etkiler, “Negrofix nedir” ve “Negrofix ne işe yarar” sorularına bilimsel bir yanıt niteliğindedir. Nutriwin Negrofix, veteriner hekimler tarafından şap hastalığı sonrası tedavi protokollerinde sıklıkla kullanılmaktadır; çünkü Negrofix sadece enfeksiyon kontrolü sağlamakla kalmaz, aynı zamanda bağışıklık sisteminin aşırı reaksiyon göstermesini engeller. Bu sayede hayvanın enerji kaybı azalır, iyileşme süresi kısalır ve genel sağlık durumu hızla normale döner.",
+      },
+      {
+        type: "heading",
+        text: "Koruyucu Kullanım ve Önleyici Etki",
+      },
+      {
+        type: "paragraph",
+        text: "Negrofix’in etkisi, yalnızca tedavi döneminde değil, koruyucu kullanımda da belirgindir. Çevrede şap salgını riski arttığında veya stres faktörleri yoğunlaştığında Negrofix kullanımı, bağışıklık sistemini önceden güçlendirir ve hastalığa yakalanma olasılığını azaltır. Bu yönüyle Negrofix, yalnızca bir tedavi ürünü değil, aynı zamanda bağışıklık dengesini koruyan biyolojik bir destekleyicidir.",
+      },
+      {
+        type: "heading",
+        text: "Nutriwin’in Güvenilir Çözümleri",
+      },
+      {
+        type: "paragraph",
+        text: "Nutriwin, hayvansal sağlık alanında geliştirdiği yenilikçi ve bilimsel temelli homeopatik ürünlerle üreticilere güvenilir çözümler sunmaktadır. Negrofix, şap hastalığıyla mücadelede veteriner hekimlerin ve yetiştiricilerin sahada güvenle uyguladığı bir üründür. Bağışıklık sistemini dengeleyici, doku onarımını hızlandırıcı ve iltihabi süreçleri düzenleyici özellikleriyle Negrofix, şap hastalığı tedavisinde fark yaratan bir çözümdür.",
+      },
+      {
+        type: "heading",
+        text: "Sonuç",
+      },
+      {
+        type: "paragraph",
+        text: "Sonuç olarak, şap hastalığı, erken teşhis ve doğru destekleyici ürün kullanımı gerektiren ciddi bir enfeksiyondur. Nutriwin Negrofix, bu süreçte hem tedavi hem de koruma açısından üreticilere güçlü bir alternatif sunar. Negrofix’in düzenli ve doğru kullanımı, şap hastalığı tedavisinde başarı oranını artırır, iyileşme sürecini kısaltır ve sürü sağlığını güvence altına alır.",
+      },
+      {
+        type: "paragraph",
+        text: "Nutriwin Negrofix, şap hastalığıyla mücadelede güçlü bir homeopatik destek; üreticinin, veterinerin ve hayvanın yanında güvenilir bir çözümdür.",
+      },
+    ],
+  },
+
+  {
     slug: "buyukbas-hayvanlarda-sap-hastaligi",
     title:
       "Büyükbaş Hayvanlarda Şap Hastalığında Güçlü İyileşme ve Bağışıklık Desteği",
     image: "/images/negrofix-blog.jpg",
-    date: "14.07.2024",
+    date: "29.10.2025",
     content: [
       {
         type: "paragraph",
