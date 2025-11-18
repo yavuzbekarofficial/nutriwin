@@ -153,4 +153,62 @@ export const blogs: Blog[] = [
       },
     ],
   },
+  {
+    slug: "sap-hastaligi-sonrasi-hepafix",
+    title:
+      "Şap Hastalığı Sonrasında Toparlanamayan Hayvanlar İçin Hepafix: Karaciğer, Bağışıklık ve Üreme Sistemini Destekleyen Etkili Çözüm",
+    image: "/images/hepafix-blog.jpg",
+    date: "18.11.2025",
+    content: [
+      {
+        type: "paragraph",
+        text: "Şap hastalığı, büyükbaş ve küçükbaş hayvancılıkta hızlı yayılan ve uzun süreli etkiler bırakan bir enfeksiyondur. Şap akut dönemde geçse bile birçok hayvan tam olarak toparlanamaz, iştahsızlık, güç kaybı, sindirim problemleri ve bağışıklık zayıflığı devam eder. Bu nedenle üreticiler sık sık “şap hastalığı sonrası tedavi nasıl yapılır”, “hayvan şap geçirdi ama toparlanmadı”, “şap sonrası iyileşme süreci nasıl hızlanır” gibi sorulara yanıt arar. Nutriwin tarafından geliştirilen Hepafix, tam da bu noktada devreye girerek şap hastalığı sonrası toparlanamayan hayvanlar için kapsamlı bir destek sunar. Hepafix, karaciğer fonksiyonlarını güçlendiren, toksinlerin atılımını hızlandıran, bağışıklık sistemini aktif hale getiren ve üreme–hormon dengesini destekleyen özel formülü sayesinde şap sonrası iyileşmeyi belirgin şekilde hızlandırır.",
+      },
+
+      {
+        type: "heading",
+        text: "Karaciğer Destek Mekanizması ve Toksin Atılımı",
+      },
+      {
+        type: "paragraph",
+        text: "Şap hastalığı sonrası hayvanların toparlanamamasının en büyük nedenlerinden biri karaciğerin ağır hasar görmesi ve vücuttan toksin atılımının yavaşlamasıdır. Hepafix, hepatositler, Kupffer hücreleri ve safra kanalı epitel hücrelerini hedef alarak karaciğerin doğal yenilenme kapasitesini destekler. Karaciğer hücrelerindeki enzim aktivitelerini düzenleyerek toksinlerin daha hızlı parçalanmasını ve vücuttan uzaklaştırılmasını sağlar. Bu detoksifikasyon etkisi, şap sonrası oluşan halsizlik, iştahsızlık ve metabolik bozulmaların ortadan kalkmasına önemli katkı sunar. Hepafix aynı zamanda safra üretimi ve akışını düzenleyerek yağ metabolizmasının yeniden dengelenmesini sağlar. Safra asitlerinin salgısını artırarak kolestaz oluşumunu önler, karaciğer üzerindeki yükü azaltır ve sindirim sisteminin daha verimli çalışmasına yardımcı olur. Bağırsaklarda yağ ve vitamin emiliminin optimize edilmesi, enerji seviyelerinin yükselmesine ve hayvanın hızlı şekilde toparlanmasına katkı sağlar.",
+      },
+
+      {
+        type: "heading",
+        text: "Bağışıklık Sisteminin Güçlendirilmesi",
+      },
+      {
+        type: "paragraph",
+        text: "Şap hastalığı sonrası tedavinin en önemli parçalarından biri bağışıklık sisteminin yeniden güçlendirilmesidir. Çünkü şap geçiren hayvanlarda bağışıklık sistemi uzun süre baskılanmış durumda kalır ve hayvan yeni enfeksiyonlara karşı savunmasız hale gelir. Hepafix, makrofajlar, T lenfositler ve B lenfositler üzerinde etkili olarak bağışıklık hücrelerinin aktivasyonunu artırır. Toll-like reseptörlerin aktive edilmesi sayesinde bağışıklık sistemi patojenlere daha hızlı yanıt verir. Makrofajların çalışma kapasitesinin yükselmesi, özellikle viral ve bakteriyel enfeksiyonlara karşı dayanıklılığı artırır. B lenfosit üretiminin artması ise uzun vadeli bağışıklık desteği oluşturur ve şap sonrası zayıflayan savunma mekanizmasını güçlendirir. Bu nedenle Hepafix, şap sonrası tedavide yalnızca karaciğeri değil, bütün bağışıklık sistemini yeniden ayağa kaldıran kapsamlı bir çözüm sunar.",
+      },
+
+      {
+        type: "heading",
+        text: "Hormon Dengesi, Enerji Artışı ve Üreme Performansının Desteklenmesi",
+      },
+      {
+        type: "paragraph",
+        text: "Şap sonrasında toparlanamayan hayvanlarda sık görülen bir diğer problem hormon dengesizliği, enerji düşüklüğü ve üreme performansının zayıflamasıdır. Hepafix, bağırsak epitel hücreleri, böbrek hücreleri ve damar dokusu üzerinde olumlu etkiler oluşturarak vücuttaki sıvı dengesinin korunmasına yardımcı olur. Bağırsaklarda su ve elektrolit kaybının azaltılmasıyla dehidrasyon riski düşer ve özellikle buzağılarda güçten düşmenin önüne geçilir. Böbrekler aracılığıyla suyun geri emiliminin artırılması, hücreler arası bağlantıların güçlenmesini ve dokularda geçirgenlik kaybının engellenmesini sağlar. Bu mekanizmalar bir araya geldiğinde Hepafix, enerji seviyelerinin yükselmesine, hormon dengesinin iyileşmesine ve genel metabolizmanın dengelenmesine katkıda bulunur. Üreme sağlığındaki düzelme, şap hastalığı sonrası üreticilerin en çok zorlandığı alanlardan biri olan verim kayıplarının önüne geçilmesini sağlar.",
+      },
+
+      {
+        type: "heading",
+        text: "Bağırsak Florasının Desteklenmesi ve Sindirim Dengesinin Kurulması",
+      },
+      {
+        type: "paragraph",
+        text: "Hepafix’in şap hastalığı sonrası tedavide önemli bir diğer rolü bağırsak florasının yeniden düzenlenmesidir. Şap sonrası stres, ateş ve iştahsızlık nedeniyle bağırsak florası bozulur ve bu durum sindirim problemlerine, ishal ve disbiyoz gibi rahatsızlıklara yol açar. Hepafix, Lactobacillus ve Bifidobacterium gibi faydalı bakterilerin gelişimini destekleyerek bağırsak florasının yeniden güçlenmesini sağlar. Bağırsakta kısa zincirli yağ asitlerinin üretiminin artması, bağırsak bariyer fonksiyonlarını güçlendirir ve patojenlerin yerleşmesini engeller. Böylece ishal ve sindirim hassasiyetleri azalırken, hayvanın iştahı ve sindirim kapasitesi normale döner. Bu etki hem sığır ve buzağılarda hem de koyun, keçi ve kuzularda bağırsak sağlığının uzun vadeli olarak korunmasına yardımcı olur.",
+      },
+
+      {
+        type: "heading",
+        text: "Hepafix’in Çok Yönlü Formülasyonu",
+      },
+      {
+        type: "paragraph",
+        text: "Sonuç olarak Nutriwin Hepafix, şap hastalığı sonrası toparlanamayan hayvanlar için karaciğer fonksiyonlarını, bağışıklık sistemini, metabolizmayı, hormon dengesini ve bağırsak florasını aynı anda destekleyen güçlü bir tedavi yardımcı ürünüdür. Şap hastalığı sonrası tedavinin başarıya ulaşması için yalnızca virüsün geçmesini beklemek yeterli değildir; hayvanın tüm organ sistemlerinin dengelenmesi gerekir. Hepafix, bu çok yönlü destek mekanizması sayesinde şap sonrası hayvanların yeniden güç kazanmasını, iştah ve enerji seviyelerinin yükselmesini ve verim kayıplarının minimuma inmesini sağlar. Nutriwin Hepafix, şap sonrası tedavide üreticinin en büyük yardımcısıdır ve hem büyükbaş hem küçükbaş hayvanlarda hızlı toparlanma için güvenilir bir çözümdür.",
+      },
+    ],
+  },
 ];
