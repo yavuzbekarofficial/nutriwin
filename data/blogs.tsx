@@ -15,76 +15,9 @@ export interface Blog {
 
 export const blogs: Blog[] = [
   {
-    slug: "alkamix-ruminant-vitamin-organik-mineral-destegi",
-    title:
-      "Alkamix Nedir? Ruminantlar İçin Vitamin, Organik Mineral ve Rumen Düzenleyici Güçlü Destek",
-    image: "/images/alkamix-blog.jpg",
-    date: "20.12.2025",
-    content: [
-      {
-        type: "paragraph",
-        text: "Hayvancılıkta sürdürülebilir verim ve sağlıklı sürüler elde etmek, doğru ve dengeli beslenme ile mümkündür. Büyükbaş ve küçükbaş hayvanlarda vitamin ve mineral eksiklikleri; gelişim geriliği, bağışıklık sisteminde zayıflama, sindirim problemleri ve performans kayıplarına yol açabilir. Bu nedenle ruminantların beslenmesinde güvenilir ve etkili destek ürünlerinin kullanılması büyük önem taşır. Alkamix, ruminantların ihtiyaç duyduğu A, D ve E vitaminleri, organik mineraller ve rumen düzenleyici bileşenler ile formüle edilmiş gelişmiş bir beslenme destek ürünüdür. Düzenli kullanımı sayesinde hayvan sağlığını destekler, yemden yararlanmayı artırır ve genel performansı yükseltir.",
-      },
-
-      {
-        type: "heading",
-        text: "Alkamix Ne İşe Yarar ve Neden Kullanılmalıdır?",
-      },
-      {
-        type: "paragraph",
-        text: "Alkamix, ruminantların günlük vitamin ve mineral ihtiyaçlarını dengeli bir şekilde karşılayarak sağlıklı büyüme ve gelişimi destekler. Özellikle besi döneminde artan mikro besin ihtiyacına cevap verirken bağışıklık sisteminin güçlenmesine katkı sağlar. İçeriğinde bulunan Vitamin A bağışıklık ve üreme fonksiyonlarını desteklerken, Vitamin D kemik ve iskelet gelişiminde önemli rol oynar. Vitamin E ise güçlü antioksidan etkisiyle hücreleri oksidatif strese karşı korur. Bu özellikleriyle Alkamix, performans ve sağlık odaklı beslenme programlarının vazgeçilmez bir parçasıdır.",
-      },
-
-      {
-        type: "heading",
-        text: "Sindirim Sistemi ve Yem Verimliliği Üzerindeki Etkisi",
-      },
-      {
-        type: "paragraph",
-        text: "Ruminantlarda yüksek verim elde edebilmenin temel şartlarından biri sağlıklı bir rumen yapısıdır. Alkamix, içeriğinde yer alan rumen düzenleyici bileşenler, Saccharomyces cerevisiae ve klinioptilolit sayesinde rumen florasının dengelenmesine yardımcı olur. Bu yapı, rumen pH dengesinin korunmasını destekler ve yemlerin daha iyi sindirilmesini sağlar. Yemden yararlanma oranının artması, iştahın desteklenmesi ve sindirim verimliliğinin yükselmesi; hayvanların canlı ağırlık artışı ve genel performansına doğrudan katkı sağlar.",
-      },
-
-      {
-        type: "heading",
-        text: "Organik Minerallerle Güçlü Kemik ve Kas Yapısı",
-      },
-      {
-        type: "paragraph",
-        text: "Büyüme ve besi dönemindeki hayvanlar için kemik ve iskelet sağlığı büyük önem taşır. Alkamix, organik formda bulunan kalsiyum ve fosfor içeriğini Vitamin D ile destekleyerek mineral emilimini artırır. Organik minerallerin yüksek biyoyararlanımı sayesinde kemik yoğunluğu desteklenir, kas gelişimi güçlenir ve iskelet sistemi daha sağlam hâle gelir. Bu özellikleriyle Alkamix, raşitizm gibi kemik hastalıklarının önlenmesine yardımcı olurken hayvanların daha güçlü ve dayanıklı olmasını sağlar.",
-      },
-
-      {
-        type: "heading",
-        text: "Antioksidan Etki ve Genel Sağlık Desteği",
-      },
-      {
-        type: "paragraph",
-        text: "Alkamix’in içeriğinde bulunan Vitamin E ve sodyum selenit, hayvanları oksidatif strese karşı koruyan güçlü antioksidan bileşenlerdir. Bu antioksidan savunma sistemi hücre bütünlüğünü korur, bağışıklık sistemini destekler ve çevresel stres faktörlerine karşı direnci artırır. Özellikle yoğun besi dönemlerinde ve stresli koşullarda hayvanların genel sağlık durumunun korunmasına önemli katkı sağlar.",
-      },
-
-      {
-        type: "heading",
-        text: "Alkamix Nasıl Kullanılır?",
-      },
-      {
-        type: "paragraph",
-        text: "Alkamix, günlük yem rasyonlarına kolayca ilave edilebilen pratik bir üründür. Büyükbaş hayvanlar için günlük 100 gram, küçükbaş hayvanlar için ise günlük 15–20 gram olacak şekilde yemlerine karıştırılarak kullanılması önerilir. Düzenli ve doğru dozda kullanım, ürünün etkilerinin daha hızlı ve verimli şekilde görülmesini sağlar. Bu sayede hayvanların beslenme dengesi korunur, performans artar ve daha sağlıklı sürüler elde edilir.",
-      },
-
-      {
-        type: "heading",
-        text: "Sonuç: Neden Alkamix?",
-      },
-      {
-        type: "paragraph",
-        text: "Alkamix; A, D ve E vitaminleri, organik mineraller ve rumen düzenleyici bileşenleri ile ruminantların sağlıklı gelişimini destekleyen güçlü bir beslenme destek ürünüdür. Yemden yararlanmayı artırır, sindirimi destekler, bağışıklık sistemini güçlendirir ve genel performansı yükseltir. Düzenli kullanım sayesinde yetiştiriciler daha sağlıklı sürüler, daha yüksek verim ve sürdürülebilir bir hayvancılık süreci elde eder.",
-      },
-    ],
-  },
-  {
     slug: "scaroff-yara-bakim-spreyi",
     title:
-      "Scaroff Yara Bakım Spreyi: Doğal İyileşme ve Hızlı Sonuç Sunan Etkili Çözüm",
+      "Scaroff Yara  Spreyi: Doğal İyileşme ve Hızlı Sonuç Sunan Etkili Çözüm",
     image: "/images/scaroff-blog.jpg",
     date: "02.12.2025",
     content: [
