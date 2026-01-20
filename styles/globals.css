@@ -10,6 +10,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  /* Arapça font değişkenini tanımlıyoruz */
+  --font-arabic: "Cairo", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +21,26 @@
   }
 }
 
+/* GENEL DÜZENLEMELER */
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Arapça seçildiğinde devreye girecek kurallar */
+[dir='rtl'] {
+  /* Tüm sitede Arapça fontunu zorunlu yapar */
+  font-family: var(--font-arabic) !important;
+}
+
+/* Arapça modunda metinlerin sağa yaslanmasını garantiye alalım */
+[dir='rtl'] body {
+  text-align: right;
+}
+
+/* Eğer Tailwind içinden kullanmak istersen yardımcı sınıf */
+.font-arabic {
+  font-family: var(--font-arabic);
 }

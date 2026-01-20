@@ -12,37 +12,34 @@ function Navbar() {
   const router = useRouter();
   const isMobile = useIsMobile();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  // useTranslation hook'undan hem t'yi hem de yeni changeLanguage fonksiyonunu al
   const { t, locale, changeLanguage } = useTranslation();
 
-  // Sabit Navbar yüksekliğini tanımlıyoruz (80px)
   const NAV_HEIGHT = "80px";
 
+  // 3 Dil arasında geçiş yapan yeni fonksiyon (TR -> EN -> AR -> TR)
   const handleLanguageChange = () => {
-    changeLanguage(locale === "tr" ? "en" : "tr");
+    if (locale === "tr") {
+      changeLanguage("en");
+    } else if (locale === "en") {
+      changeLanguage("ar");
+    } else {
+      changeLanguage("tr");
+    }
+  };
+
+  // Aktif dile göre bayrak ikonunu belirle
+  const getLangIcon = () => {
+    if (locale === "tr") return "flag:tr-4x3";
+    if (locale === "en") return "flag:gb-4x3";
+    return "flag:sa-4x3"; // Arapça için Suudi Arabistan bayrağı
   };
 
   const navLinks = [
-    {
-      name: t("navbar.home"),
-      href: "/",
-    },
-    {
-      name: t("navbar.about"),
-      href: "/hakkimizda",
-    },
-    {
-      name: t("navbar.products"),
-      href: "/urunlerimiz",
-    },
-    {
-      name: t("navbar.blog"),
-      href: "/blog",
-    },
-    {
-      name: t("navbar.contact"),
-      href: "/iletisim",
-    },
+    { name: t("navbar.home"), href: "/" },
+    { name: t("navbar.about"), href: "/hakkimizda" },
+    { name: t("navbar.products"), href: "/urunlerimiz" },
+    { name: t("navbar.blog"), href: "/blog" },
+    { name: t("navbar.contact"), href: "/iletisim" },
   ];
 
   const handleLinkClick = () => {
@@ -52,11 +49,14 @@ function Navbar() {
   };
 
   return (
-    // Navbar sabit (fixed) ve en önde (z-50)
-    <div className="fixed top-0 left-0 w-full z-50 shadow">
+    // dir={...} özelliği sayesinde Arapça seçildiğinde Logo ve Menü yer değiştirir (RTL)
+    <div
+      className="fixed top-0 left-0 w-full z-50 shadow bg-white"
+      dir={locale === "ar" ? "rtl" : "ltr"}
+    >
       {isMobile ? (
-        // Mobil Navbar
-        <div className="flex items-center justify-between px-4 py-3 bg-white h-[80px]">
+        // --- MOBİL NAVBAR ---
+        <div className="flex items-center justify-between px-4 py-3 h-[80px]">
           <div>
             <Link href="/" onClick={handleLinkClick}>
               <Image
@@ -76,16 +76,18 @@ function Navbar() {
             >
               <Icon icon="streamline-plump:phone" className="w-4 h-4"></Icon>
             </Link>
-            {/* Dil değiştirme butonu - Mobil */}
+
+            {/* Dil Değiştirme Butonu - Mobil */}
             <button
               onClick={handleLanguageChange}
-              className="p-1 rounded-full transition-opacity hover:opacity-80"
+              className="flex items-center gap-1 p-1 rounded-full transition-opacity hover:opacity-80 border border-gray-100"
             >
-              <Icon
-                icon={locale === "tr" ? "flag:gb-4x3" : "flag:tr-4x3"}
-                className="w-7 h-7"
-              />
+              <Icon icon={getLangIcon()} className="w-7 h-7" />
+              <span className="text-[10px] font-bold uppercase text-gray-500">
+                {locale}
+              </span>
             </button>
+
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-gray-700 p-2"
@@ -97,24 +99,23 @@ function Navbar() {
             </button>
           </div>
 
-          {/* DÜZELTME: Mobil Menü Konumlandırması ve Yüksekliği */}
+          {/* Mobil Menü Paneli */}
           <div
-            // top-[80px] ile navbar'ın hemen altından başlatıldı.
-            // h-full yerine, tam ekran yüksekliğinden navbar yüksekliği çıkarılarak
-            // menü yüksekliği hesaplandı (h-[calc(100dvh-80px)]).
-            // 100dvh, mobil tarayıcıların kendi çubuklarından etkilenmemesi için daha iyidir.
             style={{ top: NAV_HEIGHT, height: `calc(100dvh - ${NAV_HEIGHT})` }}
             className={`fixed left-0 w-full bg-white transition-transform duration-300 ease-in-out transform overflow-y-auto ${
-              // overflow-y-auto eklendi
-              isMenuOpen ? "translate-x-0" : "-translate-x-full"
-            } flex flex-col items-center pt-8 gap-6 z-40`} // z-index 40 yapıldı (navbar 50)
+              isMenuOpen
+                ? "translate-x-0"
+                : locale === "ar"
+                  ? "translate-x-full"
+                  : "-translate-x-full"
+            } flex flex-col items-center pt-8 gap-6 z-40`}
           >
             {navLinks.map((navLink) => (
               <Link
                 key={navLink.name}
                 href={navLink.href}
                 onClick={handleLinkClick}
-                locale={locale} // Next.js'in dil bilgisini koruması için Link bileşenine locale prop'u eklendi
+                locale={locale}
                 className={`text-2xl font-semibold transition-colors uppercase ${
                   router.pathname === navLink.href
                     ? "text-red-600"
@@ -136,8 +137,8 @@ function Navbar() {
           </div>
         </div>
       ) : (
-        // Masaüstü Navbar
-        <div className="flex items-center justify-between px-16 py-5 bg-white h-[80px]">
+        // --- MASAÜSTÜ NAVBAR ---
+        <div className="flex items-center justify-between px-16 py-5 h-[80px]">
           <div>
             <Link href="/">
               <Image
@@ -153,7 +154,7 @@ function Navbar() {
               <Link
                 key={navLink.name}
                 href={navLink.href}
-                locale={locale} // Link bileşenine locale prop'u eklendi
+                locale={locale}
                 className={`font-medium transition-colors uppercase ${
                   router.pathname === navLink.href
                     ? "text-red-600"
@@ -164,25 +165,28 @@ function Navbar() {
               </Link>
             ))}
           </div>
-          <div className="flex gap-3 text-white">
-            {/* Dil değiştirme butonu - Masaüstü */}
+          <div className="flex items-center gap-4">
+            {/* Dil Değiştirme Butonu - Masaüstü */}
             <button
               onClick={handleLanguageChange}
-              className="p-1 rounded-full transition-opacity hover:opacity-80"
+              className="flex items-center gap-2 p-1 px-2 rounded-xl transition-all hover:bg-gray-50 border border-transparent hover:border-gray-200"
             >
-              <Icon
-                icon={locale === "tr" ? "flag:gb-4x3" : "flag:tr-4x3"}
-                className="w-8 h-8"
-              />
+              <Icon icon={getLangIcon()} className="w-8 h-8" />
+              <span className="text-xs font-bold uppercase text-gray-600">
+                {locale}
+              </span>
             </button>
+
             <Link
               href="https://wa.me/908503040946"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center bg-[#25D366] p-2 px-4 rounded-3xl gap-3 hover:opacity-80 transition-opacity"
+              className="flex items-center bg-[#25D366] text-white p-2 px-4 rounded-3xl gap-3 hover:opacity-80 transition-opacity"
             >
               <Icon icon="streamline-plump:phone"></Icon>
-              <span className="uppercase">{t("navbar.contact-now")}</span>
+              <span className="uppercase text-sm font-medium">
+                {t("navbar.contact-now")}
+              </span>
             </Link>
           </div>
         </div>
