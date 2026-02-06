@@ -15,6 +15,82 @@ export interface Blog {
 
 export const blogs: Blog[] = [
   {
+    slug: "vitabolic-b-vitamini-enerji-metabolizmasi-destegi",
+    title:
+      "Vitabolic Nedir? Ruminantlarda Enerji Metabolizması ve Sinir Sistemi İçin Güçlü B Vitamini Desteği",
+    image: "/images/vitabolic-blog.jpg",
+    date: "06.02.2026",
+    content: [
+      {
+        type: "paragraph",
+        text: "Ruminant hayvanlarda yüksek verim, sağlıklı büyüme ve güçlü bir metabolizma için vitamin dengesi büyük önem taşır. Özellikle buzağı, kuzu ve oğlaklardan başlayarak süt inekleri, koyunlar ve keçilerde B grubu vitamin eksiklikleri; iştahsızlık, büyüme geriliği, sinirsel hassasiyetler ve performans kayıpları ile kendini gösterebilir. Vitabolic, ruminantlarda enerji metabolizmasını düzenlemek, bağışıklığı desteklemek ve sinir sistemi sağlığını korumak amacıyla geliştirilmiş, yüksek yoğunluklu B vitamini kombinasyonu sunan özel bir destek ürünüdür.",
+      },
+
+      {
+        type: "heading",
+        text: "Vitabolic Ne İşe Yarar ve Neden Kullanılmalıdır?",
+      },
+      {
+        type: "paragraph",
+        text: "Vitabolic, ruminantların artan B vitamini ihtiyacını karşılayarak metabolik dengeyi korumaya yardımcı olur. Büyüme dönemi, geçiş dönemi, laktasyon, stres ve hastalık süreçlerinde enerji üretiminin devamlılığını destekler. Enerji metabolizmasının düzenlenmesi; iştahın artması, yemden yararlanmanın iyileşmesi ve genel performansın yükselmesi anlamına gelir. Bu yönüyle Vitabolic, hem genç hem de erişkin hayvanlarda destekleyici bir rol üstlenir.",
+      },
+
+      {
+        type: "heading",
+        text: "Enerji Metabolizmasını Destekleyen Yüksek Yoğunluklu B Vitamini Kombinasyonu",
+      },
+      {
+        type: "paragraph",
+        text: "Vitabolic’in içeriğinde yer alan tiamin (B1), riboflavin (B2), niasin (B3), pantotenik asit (B5), piridoksin (B6) ve siyanokobalamin (B12); glukoz, yağ asitleri ve aminoasit metabolizmasında görev alarak ATP üretimini destekler. Bu farmakolojik etki mekanizması sayesinde hayvanın aldığı yem daha verimli şekilde enerjiye dönüştürülür. Artan enerji üretimi, hayvanın daha canlı, daha dayanıklı ve daha verimli olmasına katkı sağlar.",
+      },
+
+      {
+        type: "heading",
+        text: "Buzağı, Kuzu ve Oğlaklarda Büyüme ve Canlılık Desteği",
+      },
+      {
+        type: "paragraph",
+        text: "Genç ruminantlarda rumen ve sindirim sistemi gelişimi henüz tamamlanmamıştır. Bu dönemde yeterli B vitamini desteği, sindirim sisteminin sağlıklı gelişimini desteklerken iştahın açılmasına yardımcı olur. Vitabolic kullanımı; buzağı, kuzu ve oğlaklarda büyüme geriliği riskini azaltmaya, yemden yararlanmayı artırmaya ve zayıf yavrularda canlılığı desteklemeye katkı sağlar. Aynı zamanda sinirsel bozukluklar ve kas titremeleri gibi problemlerin azalmasına yardımcı olur.",
+      },
+
+      {
+        type: "heading",
+        text: "Sinir Sistemi ve Kas Koordinasyonu Üzerindeki Etkileri",
+      },
+      {
+        type: "paragraph",
+        text: "B grubu vitaminler, sinirsel iletim ve kas fonksiyonları açısından kritik öneme sahiptir. Özellikle stresli dönemlerde sinir sistemi üzerinde oluşan baskı; huzursuzluk, refleks bozuklukları ve kas koordinasyon problemleri şeklinde ortaya çıkabilir. Vitabolic, sinir sistemi ve kas koordinasyonunu destekleyerek hayvanların çevresel stres faktörlerine karşı daha dengeli ve dayanıklı olmasına yardımcı olur.",
+      },
+
+      {
+        type: "heading",
+        text: "Süt İnekleri ve Erişkin Ruminantlarda Performans Desteği",
+      },
+      {
+        type: "paragraph",
+        text: "İnek, koyun ve keçilerde geçiş dönemi ve laktasyon süreci metabolik açıdan oldukça zorlayıcıdır. Bu dönemde enerji dengesinin bozulması; iştahsızlık, yorgunluk ve verim düşüşüne yol açabilir. Vitabolic, enerji metabolizmasını destekleyerek bu sürecin daha dengeli geçmesine yardımcı olur. Düzenli kullanım, performans kayıplarının azaltılmasına ve genel kondisyonun korunmasına katkı sağlar.",
+      },
+
+      {
+        type: "heading",
+        text: "Stres ve Hastalık Sonrası Toparlanma Sürecinde Vitabolic",
+      },
+      {
+        type: "paragraph",
+        text: "Nakil, aşılama, çevre değişimi ve hastalık sonrası dönemlerde hayvan vücudu yoğun bir metabolik stres altına girer. Bu süreçte enerji ihtiyacı artarken iştah genellikle düşer. Vitabolic, stres ve hastalık sonrası toparlanmayı hızlandırmaya, iştahın yeniden kazanılmasına ve genel dayanıklılığın güçlenmesine yardımcı olur. Bu özelliği sayesinde hem koruyucu hem de destekleyici bir B vitamini çözümü sunar.",
+      },
+
+      {
+        type: "heading",
+        text: "Hangi Durumlarda Vitabolic Tercih Edilmelidir?",
+      },
+      {
+        type: "paragraph",
+        text: "Vitabolic; tüm yaş gruplarında enerji üretimini hızlandırmak, sinirsel dayanıklılığı artırmak, iştahı ve yemden yararlanmayı optimize etmek amacıyla tercih edilir. Özellikle büyüme dönemi, geçiş süreci, stresli durumlar ve performans düşüşü gözlenen ruminantlarda B vitamini desteği olarak güvenle kullanılabilir.",
+      },
+    ],
+  },
+  {
     slug: "alkamix-ruminant-vitamin-organik-mineral-destegi",
     title:
       "Alkamix Nedir? Ruminantlar İçin Vitamin, Organik Mineral ve Rumen Düzenleyici Güçlü Destek",
