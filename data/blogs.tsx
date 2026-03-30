@@ -15,6 +15,82 @@ export interface Blog {
 
 export const blogs: Blog[] = [
   {
+    slug: "pulmofix-kanatli-hayvanlarda-solunum-sagligi-destegi",
+    title:
+      "Pulmofix Nedir? Kanatlı Hayvanlarda Solunum Sağlığı, Bağışıklık ve Performans İçin Etkili Destek",
+    image: "/images/pulmofix-blog.jpg",
+    date: "30.03.2026",
+    content: [
+      {
+        type: "paragraph",
+        text: "Kanatlı hayvan yetiştiriciliğinde solunum sistemi sağlığı, sürü performansı ve üretim verimliliği açısından belirleyici bir rol oynar. Solunum yolu problemleri; büyüme geriliği, yemden yararlanmanın azalması, stres artışı ve bağışıklık zayıflaması gibi pek çok olumsuz etkiye yol açabilir. Nutriwin tarafından geliştirilen Pulmofix, kanatlı hayvanlarda solunum yollarını desteklemek, bağışıklık sistemini güçlendirmek ve solunum kaynaklı verim kayıplarını azaltmak amacıyla özel olarak formüle edilmiş etkili bir üründür.",
+      },
+
+      {
+        type: "heading",
+        text: "Pulmofix Ne İşe Yarar ve Neden Kullanılmalıdır?",
+      },
+      {
+        type: "paragraph",
+        text: "Pulmofix, kanatlı hayvanlarda solunum fonksiyonlarının sağlıklı şekilde devam etmesini destekler. Bronşları açarak hava akışını artırır ve solunum yollarında oluşabilecek tıkanıklıkların önüne geçilmesine yardımcı olur. Aynı zamanda bağışıklık hücrelerini aktive ederek enfeksiyonlara karşı savunma mekanizmalarının güçlenmesini sağlar. Özellikle yoğun üretim yapılan kümeslerde Pulmofix kullanımı, solunum sağlığının korunmasında önemli bir destek sunar.",
+      },
+
+      {
+        type: "heading",
+        text: "Solunum Yollarında Hava Akışı ve Bronş Destekleyici Etki",
+      },
+      {
+        type: "paragraph",
+        text: "Kanatlı hayvanlarda bronşların açık olması, oksijen alımının artması ve metabolizmanın sağlıklı çalışması açısından büyük önem taşır. Pulmofix, bronş açıcı etkisi sayesinde solunum yollarındaki hava akışını destekler. Bu etki, hayvanların daha rahat nefes almasına, stres seviyelerinin düşmesine ve genel yaşam konforunun artmasına katkı sağlar.",
+      },
+
+      {
+        type: "heading",
+        text: "Mukus Dengesi ve Öksürüğün Hafifletilmesi",
+      },
+      {
+        type: "paragraph",
+        text: "Solunum yollarında aşırı mukus birikimi, kanatlı hayvanlarda nefes darlığına ve öksürüğe neden olabilir. Nutriwin Pulmofix, mukusu dengeleyerek solunum yollarının temiz kalmasına yardımcı olur. Bu sayede öksürük şikayetleri azalır ve hayvanlar daha rahat bir solunum sürecine girer. Mukus dengesinin sağlanması, solunum yolu sağlığının korunmasında önemli bir avantaj sunar.",
+      },
+
+      {
+        type: "heading",
+        text: "Bağışıklık Sisteminin Güçlendirilmesi",
+      },
+      {
+        type: "paragraph",
+        text: "Solunum yolu enfeksiyonlarıyla mücadelede güçlü bir bağışıklık sistemi temel unsurdur. Pulmofix, bağışıklık yanıtını destekleyerek kanatlı hayvanların enfeksiyonlara karşı daha dirençli hale gelmesine katkı sağlar. Antibakteriyel ve antiviral mekanizmalar sayesinde hastalık riskinin azalmasına ve sürü sağlığının korunmasına yardımcı olur.",
+      },
+
+      {
+        type: "heading",
+        text: "Alerjik Reaksiyonlar ve İnflamasyon Kontrolü",
+      },
+      {
+        type: "paragraph",
+        text: "Tozlu, kapalı veya yoğun kümes ortamları kanatlı hayvanlarda alerjik solunum problemlerine yol açabilir. Pulmofix, alerjik reaksiyonları baskılayarak solunum yollarındaki inflamasyonu azaltmaya yardımcı olur. Bu etki, hayvanların solunum konforunu artırırken çevresel faktörlere karşı daha dayanıklı olmalarını sağlar.",
+      },
+
+      {
+        type: "heading",
+        text: "Solunum Sağlığı ile Performans Arasındaki Bağlantı",
+      },
+      {
+        type: "paragraph",
+        text: "Sağlıklı solunum sistemi, kanatlı hayvanların yemden yararlanmasını ve genel performansını doğrudan etkiler. Pulmofix kullanımı sayesinde solunum problemleri azalan hayvanlar daha az stres yaşar, daha aktif olur ve üretim performansı yükselir. Bu durum hem hayvan refahını hem de yetiştiricinin verim beklentisini olumlu yönde etkiler.",
+      },
+
+      {
+        type: "heading",
+        text: "Kanatlı Hayvanlarda Solunum Sağlığı için Nutriwin Pulmofix",
+      },
+      {
+        type: "paragraph",
+        text: "Nutriwin Pulmofix, kanatlı hayvanlarda solunum yollarını destekleyen, bağışıklığı güçlendiren ve solunum kaynaklı performans kayıplarını azaltmaya yardımcı olan güvenilir bir çözümdür. Düzenli kullanım, solunum sağlığının korunmasına katkı sağlarken sürü genelinde daha dengeli ve sağlıklı bir üretim süreci sunar. Sağlıklı solunum, güçlü bağışıklık ve yüksek performans hedefleyen yetiştiriciler için Pulmofix etkili bir destek olmaya devam etmektedir.",
+      },
+    ],
+  },
+  {
     slug: "vitabolic-b-vitamini-enerji-metabolizmasi-destegi",
     title:
       "Vitabolic Nedir? Ruminantlarda Enerji Metabolizması ve Sinir Sistemi İçin Güçlü B Vitamini Desteği",
