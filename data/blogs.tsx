@@ -15,6 +15,82 @@ export interface Blog {
 
 export const blogs: Blog[] = [
   {
+    slug: "win-maxi-cell-hayvan-sagligi-ve-performans-destegi",
+    title:
+      "Win Maxi Cell Nedir? Sığır, Buzağı, Koyun ve Kuzularda Sağlık Dengesi ve Performans Desteği",
+    image: "/images/maxicell-blog.jpg",
+    date: "15.04.2026",
+    content: [
+      {
+        type: "paragraph",
+        text: "Hayvancılıkta sürdürülebilir verimlilik ve sağlıklı yetiştiricilik, yalnızca doğru bakım uygulamalarıyla değil, aynı zamanda dengeli ve etkili besin destekleriyle mümkün olur. Özellikle sığır, buzağı, koyun ve kuzu yetiştiriciliğinde vitamin, mineral ve amino asit desteği hayvanların gelişiminde kritik rol oynar. Bu noktada Nutriwin Kimya tarafından geliştirilen Win Maxi Cell, yetiştiricilerin hem sağlık hem performans beklentilerine cevap veren güçlü bir destek ürünü olarak öne çıkar. Günümüzde birçok yetiştirici “hayvan vitamin desteği”, “sığır bağışıklık güçlendirici”, “buzağı gelişim vitamini” veya “küçükbaş performans artırıcı ürün” gibi aramalar yaparken, Win Maxi Cell bu ihtiyaçlara bütüncül bir çözüm sunar.",
+      },
+
+      {
+        type: "heading",
+        text: "Hayvan Sağlığında Dengenin Önemi",
+      },
+      {
+        type: "paragraph",
+        text: "Hayvanların genel sağlık durumunun korunması, yalnızca hastalık dönemlerinde değil, büyüme ve gelişmenin her aşamasında önemlidir. Dengesiz beslenme ve yetersiz vitamin-mineral alımı; bağışıklık sisteminin zayıflamasına, sindirim problemlerine ve performans kayıplarına yol açabilir. Win Maxi Cell, içerdiği vitamin destekleri, mineraller ve esansiyel amino asitler sayesinde hayvanların vücut fonksiyonlarını destekleyerek bu dengenin korunmasına yardımcı olur. Bu yönüyle ürün, genel sağlık destekleyici hayvan ilacı arayışında olan yetiştiriciler için güvenilir bir alternatiftir.",
+      },
+
+      {
+        type: "heading",
+        text: "Vitamin Destekleri ile Güçlü Bir Temel",
+      },
+      {
+        type: "paragraph",
+        text: "Win Maxi Cell’in en önemli avantajlarından biri, kapsamlı vitamin içeriğidir. Vitamin C güçlü antioksidan etkisiyle bağışıklık sistemini desteklerken, Vitamin A göz, deri ve mukoza sağlığının korunmasına katkı sağlar. Vitamin D kalsiyum ve fosfor metabolizmasını düzenleyerek kemik ve kas yapısını destekler. Vitamin E hücre zarlarını oksidatif strese karşı korur. Vitamin B kompleksi enerji metabolizmasını ve sinir sistemi fonksiyonlarını desteklerken, Vitamin K3 kan pıhtılaşmasını ve kemik sağlığını destekleyerek hayvanların genel dayanıklılığını artırır. Bu özellikleriyle Win Maxi Cell, hayvanlar için vitamin kompleksi aramalarında sıkça tercih edilen bir üründür.",
+      },
+
+      {
+        type: "heading",
+        text: "Bağışıklık ve Bağırsak Desteği",
+      },
+      {
+        type: "paragraph",
+        text: "Sağlıklı bir bağışıklık sistemi, doğrudan sindirim sistemi ile ilişkilidir. Win Maxi Cell içeriğinde yer alan selenyum, güçlü antioksidan etkisi sayesinde hücresel hasarın azaltılmasına ve bağışıklık yanıtının desteklenmesine yardımcı olur. Bağırsak mikrobiyotasının dengede olması, yemden alınan besinlerin daha iyi değerlendirilmesini sağlar. Bu etki özellikle buzağı ve kuzu gibi gelişim dönemindeki hayvanlarda büyüme performansını olumlu yönde etkiler.",
+      },
+
+      {
+        type: "heading",
+        text: "Esansiyel Yağlar ile Sindirim ve Metabolizma Desteği",
+      },
+      {
+        type: "paragraph",
+        text: "Win Maxi Cell’de bulunan esansiyel yağ karışımları, sindirim sisteminin düzenli çalışmasına katkı sağlar. Sindirim ve metabolizmanın desteklenmesi, hayvanların yemden maksimum fayda sağlamasına yardımcı olur. Bu durum hem kilo artışı hem de genel kondisyon açısından önemli avantajlar sunar. Performans odaklı yetiştiriciler için Win Maxi Cell, performans artırıcı hayvan destek ürünü kategorisinde güçlü bir yere sahiptir.",
+      },
+
+      {
+        type: "heading",
+        text: "Esansiyel Amino Asitlerle Güçlü Gelişim",
+      },
+      {
+        type: "paragraph",
+        text: "Metiyonin, lizin, L-sistin, L-treonin ve diğer esansiyel amino asitler; protein sentezi, kas gelişimi, doku onarımı ve bağışıklık yanıtı gibi temel biyolojik süreçlerde önemli rol oynar. Win Maxi Cell, bu amino asitleri dengeli bir şekilde sunarak hayvanların büyüme hızını ve genel dayanıklılığını destekler. Enerji üretimi ve hücre yenilenmesine katkı sağlayan bu yapı, ürünü kas gelişimini destekleyen hayvan ilacı arayışında olan yetiştiriciler için ideal hale getirir.",
+      },
+
+      {
+        type: "heading",
+        text: "Farklı İşletmelere Uygun Ambalaj Seçenekleri",
+      },
+      {
+        type: "paragraph",
+        text: "Nutriwin Kimya, Win Maxi Cell’i 100 ml, 250 ml, 1 litre ve 5 litre ambalaj seçenekleriyle sunarak farklı işletme ölçeklerine uygun çözümler sağlar. Küçük aile işletmelerinden büyük çiftliklere kadar her yetiştirici, ihtiyacına uygun ambalajı tercih edebilir. Bu esneklik, ürünün kullanımını pratik ve ekonomik hale getirir.",
+      },
+
+      {
+        type: "heading",
+        text: "Sağlıkta Denge, Performansta Güçlü İlerleme",
+      },
+      {
+        type: "paragraph",
+        text: "Win Maxi Cell, yalnızca bir vitamin ve mineral desteği değil; hayvan sağlığını bütüncül olarak ele alan güçlü bir destek ürünüdür. Nutriwin Kimya güvencesiyle geliştirilen bu ürün, sığır, buzağı, koyun ve kuzu yetiştiriciliğinde sağlık ve performans hedeflerini aynı anda destekler. Hayvan sağlığı için vitamin, sığır ve küçükbaş destek ürünü veya bağışıklık güçlendirici hayvan ilacı arayışında olan yetiştiriciler için Win Maxi Cell güvenilir ve etkili bir tercihtir.",
+      },
+    ],
+  },
+  {
     slug: "pulmofix-kanatli-hayvanlarda-solunum-sagligi-destegi",
     title:
       "Pulmofix Nedir? Kanatlı Hayvanlarda Solunum Sağlığı, Bağışıklık ve Performans İçin Etkili Destek",
