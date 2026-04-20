@@ -55,6 +55,15 @@ export const blogs: Blog[] = [
 
       {
         type: "heading",
+        text: "Kanatlı Hayvanlarda Genel Sağlık ve Performans Desteği",
+      },
+      {
+        type: "paragraph",
+        text: "Win Maxi Cell, yalnızca büyükbaş ve küçükbaş hayvanlar için değil, kanatlı hayvan yetiştiriciliğinde de genel sağlık ve performans desteği amacıyla tercih edilebilen bir üründür. Broiler ve yumurta tavuğu yetiştiriciliğinde vitamin, mineral ve amino asit dengesi; büyüme hızı, yemden yararlanma ve bağışıklık gücü açısından büyük önem taşır. Win Maxi Cell içeriğinde yer alan vitamin kompleksleri ve esansiyel amino asitler, kanatlı hayvanlarda metabolik dengeyi destekleyerek stres kaynaklı performans düşüşlerinin azaltılmasına yardımcı olur. Kanatlı vitamin desteği, tavuk bağışıklık güçlendirici ve broiler performans artırıcı ürün arayışında olan yetiştiriciler için Win Maxi Cell çok yönlü bir destek sunar.",
+      },
+
+      {
+        type: "heading",
         text: "Esansiyel Yağlar ile Sindirim ve Metabolizma Desteği",
       },
       {
